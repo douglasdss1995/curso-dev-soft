@@ -1,0 +1,16 @@
+diff a/div.html b/div.html	(rejected hunks)
+@@ -0,0 +1,13 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Title</title>
++</head>
++<body>
++<div>
++  <h1>Título agrupado por uma div com uma tag <span>span</span> interna</h1>
++</div>
++
++</body>
++</html>
+\ No newline at end of file
