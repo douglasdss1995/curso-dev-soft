@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labels</title>
+</head>
+<body>
+<form action="/enviar" method="post">
+    <fieldset>
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Digite seu Email" value=""><br>
+        <legend>Informações de Login</legend>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name=*senha* placeholder="Digite sua Senha" value=""><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" value=""><br>
+
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua Idade " value=""><br>
+
+        <label for="nascimento">Nascimento: </label>
+        <input type="date" id="nascimento" name="nascimento" placeholder="Digite sua Idade" value=""><br>
+
+        <label for="brasileiro">Brasileiro</label>
+        <input type="radio" name="nacionalidade" id="brasileiro" value="brasileiro">
+        <label for="estrangeiro">Estrangeiro</label>
+        <input type="radio" name="nacionalidade" id="estrangeiro" value="estrangeiro"><br>
+        <label>Cidade</label>
+        <select name="cidade">
+            <option value="am">Manaus</option>
+            <option value="sp">São Paulo</option>
+            <option value="ex">Exterior</option>
+        </select><br>
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Informações de Sistema</legend>
+
+
+        <label for="is_admin">Administrador? </label>
+        <input type="checkbox" is="is_admin" name="is_admin" value=""><br>
+
+        <label for="is_usuario">Usuario?</label>
+        <input type="checkbox" is="usuario" name="usuario" value=""><br>
+    </fieldset>
+    <fieldset>
+        <legend>=== Anotações ===</legend>
+        <label for="anotações">Mensagem</label>
+        <textarea name="anotações" id="anotações" rows="5" cols="30"
+                  placeholder="Digite sua Anotação..."></textarea><br>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button" onclick="alert('Olá')">Clique aqui</button>
+</form>
+
+</body>
+</html>
