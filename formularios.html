@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <title>formulario</title>
 </head>
-<body>
+<body bgcolor="green" text="#ffd700">
+<img src="marca_ufam_vetor_negativo.png" alt="UFAM LOGO"
+     width="120" height="125">
 <form action="/enviar" method="post">
-  <label for="nome">Nome: </label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
-
-  <label for="senha">Senha: </label>
-  <input type="password" id="senha" name="senha" placeholder="Digite sua senha"value=""><br>
-
-  <label for="email">Email: </label>
-  <input type="email" id="email" name="email" placeholder="Digite seu email"value=""><br>
-
-  <label for="data de nascimento">Data de Nascimento: </label>
-  <input type="date" id="data de nascimento" name="data de nascimento" placeholder="Digite sua idade"value=""><br>
-
-  <label for="brasileiro">Brasileiro: </label>
-  <input type="radio" id="brasileiro" name="nacionalidade" value="brasileiro"><br>
-  <label for="estrangeiro">Estrangeiro: </label>
-  <input type="radio" id="estrangeiro" name="nacionalidade" value="estrangeiro"><br>
-
-  <label for="is_admin">Adiministrador? </label>
-  <input type="checkbox" id="is_admin" name="is_admin" value=""><br>
+    <fieldset>
+        <legend>Informações de Login</legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" value=""><BR>
+        <br>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
+    </fieldset>
 <p></p>
-  <label for="ENVIAR"></label>
-  <input type="button" id="enviar" name="enviar" value="ENVIAR"><br>
-
+    <fieldset>
+       <legend>Informações Pessoais</legend>
+        <label for="data de nascimento">Data de Nascimento: </label>
+        <input type="date" id="data de nascimento" name="data de nascimento" placeholder="Digite sua idade" value=""><BR>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua Idade" value=""><br>
+        <br>
+        <label for="brasileiro">Brasileiro: </label>
+        <input type="radio" id="brasileiro" name="nacionalidade" value="brasileiro">
+        <label for="estrangeiro">Estrangeiro: </label>
+        <input type="radio" id="estrangeiro" name="nacionalidade" value="estrangeiro"><br>
+        <br>
+        <label> Cidade </label>
+        <select name="Cidade">
+            <option value="Am">Manaus</option>
+            <option value="SP">São Paulo</option>
+            <option value="Ex">Exterior</option>
+        </select><br>
+    </fieldset>
+    <fieldset>
+        <legend>Informações do Sistema</legend>
+        <label for="is_admin">Aceito os termos de privacidade </label>
+        <input type="checkbox" id="is_admin" name="is_admin" value=""><br>
+    </fieldset>
+    <p><label for="anotações">Descrição:</label></p>
+    <textarea id="anotações" name="anotações" rows="2" cols="20" placeholder="Digite sua Descrição!"></textarea> <p></p>
+    <button type="reset">Limpar</button>
+    <button type="button" onclick="alert('olá!')">CLique Aqui</button>
+    <button type="submit">Enviar</button>
 </form>
 </body>
 </html>
