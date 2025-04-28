@@ -6,31 +6,59 @@
 </head>
 <body>
 <form action="/enviar" method="post">
-  <!--Campos vão aqui-->
+    <!--Campos vão aqui-->
 
-  <label for="nome">Senha: </label>
-  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
+    <fieldset>
+        <legend>Informações de login</legend>
 
-  <label for="nome">E-mail: </label>
-  <input type="email" id="email" name="email" placeholder="Digite seu email" value=""><br>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
 
-  <label for="nome">Nome: </label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" value=""><br>
+    </fieldset>
 
-  <label for="nome">Nascimento: </label>
-  <input type="date" id="nascimento" name="nascimento" placeholder="Digite sua idade" value=""><br>
+    <fieldset>
+        <legend>Informações de pessoais</legend>
 
-  <label for="nome">Idade: </label>
-  <input type="number" id="idade" name="idade" placeholder="Digite s  ua idade" value=""><br>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
 
-  <label for="nome">Brasileiro: </label>
-  <input type="radio" name="nacionalidade" id="brasileiro"  placeholder="Digite seu nome" value="brasileiro><br>
+        <label for="nascimento">Nascimento: </label>
+        <input type="date" id="nascimento" name="nascimento" placeholder="Digite sua idade" value=""><br>
 
-  <label for="nome">Estrangeiro: </label>
-  <input type="radio"  name="nacionalidade" id="estrangeiro" placeholder="Digite seu nome" value="estrangeiro"><br>
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" value=""><br>
 
-  <label for="nome">Administrador: </label>
-  <input type="checkbox" id="is_admin" name="is_admin" placeholder="Digite seu nome" value=""><br>
+        <label for="brasileiro">Brasileiro: </label>
+        <input type="radio" name="nacionalidade" id="brasileiro" placeholder="Digite seu nome" value="brasileiro"><br>
+
+        <label for="estrangeiro">Estrangeiro: </label>
+        <input type="radio" name="nacionalidade" id="estrangeiro" placeholder="Digite seu nome" value="estrangeiro"><br>
+
+        <label>Cidade
+            <select name="cidade">
+                <option value="am">Manaus</option>
+                <option value="sp">São Paulo</option>
+                <option value="ex">Exterior</option>
+            </select><br>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de sistema</legend>
+        <label for="is_admin">Administrador: </label>
+        <input type="checkbox" id="is_admin" name="is_admin" placeholder="Digite seu nome" value=""><br>
+    </fieldset>
+
+    <label for="anotacoes">Mensagem:</label>
+    <textarea id="anotacoes" name="anotacoes" rows="5" cols="30"
+              placeholder="Digite sua anotação..."></textarea><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button" onclick="alert('Olá!')">Clique aqui</button>
+
 </form>
 </body>
 </html>
