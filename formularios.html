@@ -7,41 +7,56 @@
 <body>
 
 <form action="/enviar" method="post">
+
     <!--Campos vão aqui---->
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+    <fieldset>
+        <legend> Informações de login</legend>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value=""><br>
+    </fieldset>
+    <fieldset>
+        <legend> Informações pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+        <label for="nascimento">Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" placeholder="Digite sua data de nascimento" value=""><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" value=""><br>
+        <label for="brasileiro">Brasileiro:</label>
+        <input type="radio" name="nacionalidade" id="brasileiro" value="brasileiro"><br>
 
-  <label for="senha">Senha:</label>
-  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
+        <label for="estrangeiro">Estrangeiro:</label>
+        <input type="radio" name="nacionalidade" id="estrangeiro" value="estrangeiro"><br>
+        <label> Cidade
+            <select name="Cidade">
+                <option value="am">Manaus</option>
+                <option value="sp">São Paulo</option>
+                <option value="ex">Exterior</option>
+            </select></label><br>
+    </fieldset>
+    <fieldset>
+        <legend> Informações de sistema</legend>
+        <label for="is_admin">Administrador?</label>
+        <input type="checkbox" id="is_admin" name="is_admin" value=""><br>
+    </fieldset>
 
-  <label for="email">E-mail:</label>
-  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value=""><br>
+    <!--    <label> Cidade </label>-->
+    <!--    <select name="Cidade" multiple>-->
+    <!--        <option value="am">Manaus</option>-->
+    <!--        <option value="sp">São Paulo</option>-->
+    <!--        <option value="ex">Exterior</option>-->
+    <!--    </select><br>-->
 
-  <label for="nascimento">Nascimento:</label>
-  <input type="date" id="nascimento" name="nascimento" placeholder="Digite sua data de nascimento" value=""><br>
-
-  <label for="idade">Idade:</label>
-  <input type="number" id="idade" name="idade" placeholder="Digite sua idade" value=""><br>
-
-  <label for="brasileiro">Brasileiro:</label>
-  <input type="radio" name="nacionalidade" id="brasileiro" value="brasileiro"><br>
-
-  <label for="estrangeiro">Estrangeiro:</label>
-  <input type="radio" name="nacionalidade" id="estrangeiro" value="estrangeiro"><br>
-
-  <label for="is_admin">Administrador:</label>
-  <input type="checkbox"  id="is_admin" name="is_admin" value=""><br>
-
-
-
-
-
-
-
+    <label for="anotacoes">Mensagem:</label>
+    <textarea id="anotacoes" name="anotacoes" rows="5" cols="30"
+              placeholder="Digite sua anotação..."></textarea><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button" onclick="alert('Olá')">Clique aqui</button>
 
 </form>
-
-
 
 
 </body>
