@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<fieldset>
 <form action="/enviar" method="post">
-  <!-- Campos vao aqui -->
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+    <legend>Informações de login</legend>
+    <!-- Campos vao aqui -->
+    <label for="senha">Senha: </label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
 
-  <label for="senha">Senha: </label>
-  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" value=""><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" value=""><br>
+</fieldset>
 
-  <label for="email">email: </label>
-  <input type="email" id="email" name="email" placeholder="Digite seu email" value=""><br>
+<fieldset>
 
-  <label for="nome">nome: </label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
+    <legend>Informações pessoais</legend>
 
-  <label for="nascimento">Nascimento: </label>
-  <input type="date" id="nascimento" name="Digite sua idade" value=""><br>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value=""><br>
 
-  <label for="idade">idade: </label>
-  <input type="number" id="idade" name="idade" placeholder="Digite sua idade" value=""><br>
+    <label for="nascimento">Nascimento: </label>
+    <input type="date" id="nascimento" name="Digite sua idade" value=""><br>
 
-  <label for="brasileiro">Brasileiro</label>
-  <input type="radio" name="nacionalidade" id="brasileiro" value="brasileiro">
-  <label for="estrangeiro">Estrangeiro</label>
-  <input type="radio" id="estrangeiro" value="estrangeiro"><br>
+    <label for="idade">Idade: </label>
+    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" value=""><br>
+
+    <label for="brasileiro">Brasileiro</label>
+    <input type="radio" name="nacionalidade" id="brasileiro" value="brasileiro">
+    <label for="estrangeiro">Estrangeiro</label>
+    <input type="radio" name="nacionalidade" id="estrangeiro" value="estrangeiro"><br>
+
+    <label>Cidade</label>
+    <select name="cidade">
+        <option value="am">Manaus</option>
+        <option value="sp">São Paulo</option>
+        <option value="ex">Exteriior</option>
+    </select><br>
+
+    <label>Cidade</label>
+    <select name="cidade" multiple>
+        <option value="am">Manaus</option>
+        <option value="sp">São Paulo</option>
+        <option value="ex">Exteriior</option>
+    </select><br>
+</fieldset>
+
+<fieldset>
+    <legend>Informações do sistema</legend>
 
   <label for="is_admin">Administrador? </label>
-  <input type="checkbox" id="is_admin" name="is_admin" value="is_admin"><br>
+    <input type="checkbox" id="is_admin" name="is_admin" value="is_admin"><br>
+
+</fieldset>
+    <label for="anotacoes">Mensagem:</label>
+    <textarea id="anotacoes" name="anotacoes" rows="5" cols="30"
+              placeholder="Digite sua anotação...">
+    Anotação
+
+  </textarea><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button" on click="alert('olá!)">Clique aqui </button>
+
+
 </form>
 </body>
 </html>
