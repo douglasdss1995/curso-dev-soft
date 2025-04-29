@@ -5,24 +5,29 @@
     <title>Title</title>
 </head>
 <body>
-<fieldset>
-<legend>Informações pessoais</legend>
-<label for="nome">Nome:</label><br>
-<input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+<h1>Formulário de cadastro de Usuários</h1>
+<form action>
+    <fieldset>
+        <legend>Informações de login</legend>
+        <label for="username">Nome usuáro:</label><br>
+        <input type="text" id="username" name="username" value=""><br>
 
-<label for="email">E-mail:</label><br>
-<input type="email" id="email" name="email" placeholder="Digite seu e-mail" value=""><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" value=""><br>
 
-<label for="senha">Senha:</label><br>
-<input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password" value=""><br>
+    </fieldset>
 
-<label for="nascimento">Nascimento:</label><br>
-<input type="date" id="nascimento" name="nascimento" placeholder="Digite sau idade" value=""><br>
-</fieldset>
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        <label for="nascimento">Nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento" value=""><br>
+    </fieldset>
 
-<button type="submit">Enviar</button>
-<button type="reset">Cancelar</button>
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
 
-
+</form>
 </body>
 </html>
