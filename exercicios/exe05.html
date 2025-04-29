@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido E-Commerce</title>
+</head>
+<body>
+<form action="/enviar" method="post">
+    <fieldset>
+        <legend>Área de Compras </P></legend>
+        <label for="produto" id> Produto: </label><br>
+        <select name="produto" id="produto" required>
+            <option value="lapis">Lapis</option>
+            <option value="caneta">Caneta</option>
+            <option value="caderno">Caderno</option>
+            <option value="borracha">Borracha</option>
+            <option value="Apontador">Apontador</option>
+            <option value="Corretivo">Corretivo</option>
+        </select><br>
+        <br>
+        <label for="quantidade">Quantidade:</label>
+        <select name="quantidade" id="quantidade" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br>
+        <label for="quantidade2">Outra quantidade: </label>
+        <input type="number" name="quantidade2" id="quantidade2" required><br>
+    </fieldset>
+    <br>
+    <button type="submit">Comprar</button>
+    <button type="reset">Cancelar</button>
+
+</body>
+</html>
