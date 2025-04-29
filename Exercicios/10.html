@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/enviar" method="post">
+    <h2>Formulário de Reclamação/Sugestão</h2>
+    <label for="sugestao"><strong>Sugestão:</strong></label>
+    <input type="radio" name="feedback" id="sugestao" value="sugestao" required><br>
+    <label for="reclamacao"><strong>Reclamação:</strong></label>
+    <input type="radio" name="feedback" id="reclamacao" value="reclamacao" required><br>
+    <label for="observacoes"><strong>Observações:</strong></label>
+    <textarea id="observacoes" name="observacoes" rows="5" cols="30"
+              placeholder="Digite aqui..." required></textarea><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+
+</form>
+
+</body>
+</html>

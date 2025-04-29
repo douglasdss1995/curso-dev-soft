@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Formulário de Pedido (E-Commerce)</h1><br>
+<h2>Mercearia on-line</h2><br>
+
+<h3>Finalização de compra</h3>
+<fieldset>
+    <legend><strong>Selecione o produto desejado:</strong></legend>
+    <select name="produtos" required>
+        <option value="produto"></option>
+        <option value="produto">Arroz</option>
+        <option value="produto">Feijão</option>
+        <option value="produto">Macarrão</option>
+    </select><br>
+    <label for="qtd"><strong>Digite a quantidade do produto:</strong></label>
+    <input type="number" id="qtd" name="qtd" min="1" max="10" value="1" required>
+</fieldset>
+<button type="submit">ENVIO</button>
+<button type="reset">CANCELAR</button>
+</body>
+</html>

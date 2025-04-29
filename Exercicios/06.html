@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/enviar" method="post">
+    <h2><strong>Marcação de consultas</strong></h2>
+    <fieldset>
+        <legend><strong>Pediatras</strong></legend>
+        <select name="medico" required>
+            <option value="medico"></option>
+            <option value="medico1">João</option>
+            <option value="medico2">Marcos</option>
+            <option value="medico3">Tiago</option>
+            <option value="medico4">Pedro</option>
+            <option value="medico5">Paulo</option>
+        </select><br>
+        <label for="data"><strong>Selecione a data da consulta</strong></label>
+        <input type="date" id="data" name="data" value="" required><br>
+        <label for="horario"><strong>Selecione o horário da consulta</strong></label>
+        <input type="time" id="horario" name="horario" value="" required><br>
+    </fieldset>
+    <button type="submit">ENVIO</button>
+    <button type="reset">CANCELAR</button>
+</form>
+</body>
+</html>

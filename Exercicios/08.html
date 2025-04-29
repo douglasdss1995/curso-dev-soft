@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/enviar" method="post"></form>
+<h2><strong>Formulário de Doação</strong></h2>
+<fieldset>
+    <legend><strong>Faça sua doação</strong></legend>
+    <label for="dinheiro"><strong>Digite o valor a ser doado:</strong></label>
+    <input type="number" id="dinheiro" name="dinheiro" placeholder="R$" value="" min="1" required><br>
+    <label><strong>Forma de pagamento:</strong></label>
+    <select id="pagamento" name="Forma de pagamento" required>
+        <option value="meio"></option>
+        <option value="meio1">Crédito</option>
+        <option value="meio2">Dédito</option>
+        <option value="meio3">Pix</option>
+        <option value="meio4">Transferência bancária</option>
+    </select><br>
+</fieldset>
+<button type="submit">ENVIO</button>
+<button type="reset">CANCELAR</button>
+</body>
+</html>

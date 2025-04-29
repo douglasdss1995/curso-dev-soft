@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/enviar" method="post">
+    <h2>Formulário de Pesquisa de Satisfação</h2>
+    <fieldset>
+        <legend><strong>Feedback do cliente</strong></legend>
+        <label>De 1 a 10, qual nota você dá para nosso atendimento?</label><br>
+        <select name="nota" required>
+            <option value="nota">1</option>
+            <option value="nota">2</option>
+            <option value="nota">3</option>
+            <option value="nota">4</option>
+            <option value="nota">5</option>
+            <option value="nota">6</option>
+            <option value="nota">7</option>
+            <option value="nota">8</option>
+            <option value="nota">9</option>
+            <option value="nota">10</option>
+        </select><br>
+        <label for="mensagem"><strong>Deixe aqui sua opinião:</strong></label><br>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+    </fieldset>
+    <button type="submit">ENVIO</button>
+    <button type="reset">CANCELAR</button>
+</form>
+</body>
+</html>
