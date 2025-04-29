@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Mesa</title>
+</head>
+<body bgcolor="#a52a2a" text="#ffd700">
+<header><img src="https://publicimages.brmalls.com.br/shoppings/AJNA-ARV0OI.PNG" alt="picanha mania" width="140"
+             height="110">
+    <h1>Faça sua Reserva:</h1></header>
+<main>
+    <form action="">
+        <fieldset>
+            <legend>informações do Reservador</legend>
+            <label for="nome">Nome do Reservador: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required><br>
+            <br>
+            <label for="telefone">Telefone de Contato: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações da Reserva</legend>
+            <label for="quantidade">Quantidade de Pessoas: </label>
+            <input type="number" name="quantidade" id="quantidade" min="1" max="20" required><br>
+            <br>
+            <label for="mês">Escolha o Dia da Reserva: </label>
+            <input type="date" name="Mês" id="Mês" min="2025-04-29" max="2025-12-23" required><br>
+            <p></p>
+            <label for="hora">Escolha a Hora da Reserva: </label>
+            <input type="time" id="hora" name="hora" min="18:00" max="23:00" required>
+        </fieldset>
+        <br>
+        <label for="pedir">Clique para Reservar:</label>
+        <button type="submit" id="pedir" name="pedir">Reservar</button>
+        <p></p>
+        <label for="Limpar">Clique para Limpar:</label>
+        <button type="reset" id="Limpar" name="Limpar">Limpar</button>
+    </form>
+</main>
+</body>
+</html>

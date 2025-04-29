@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+<header>
+    <h1>Feedback do Usuário:</h1>
+</header>
+<main>
+    <form action="enviar" method="post">
+        <fieldset>
+            <label for="nota">De 1 a 5 que nota você da para nosso atendimento?</label>
+            <select name="nota" id="nota">
+                <option value="nota">1</option>
+                <option value="nota">2</option>
+                <option value="nota">3</option>
+                <option value="nota">4</option>
+                <option value="nota">5</option>
+            </select><br>
+            <label for="Comentario">Deixe seu Comentario: </label><br>
+            <textarea name="Comentario" id="Comentario" cols="30" rows="10" required></textarea><br>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</main>
+</body>
+</html>

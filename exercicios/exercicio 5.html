@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faça seu Pedido!</title>
+</head>
+<body>
+<header>
+  <h1><strong>Panificadora FPF Tech</strong></h1>
+  <h2>Faça seu Pedido!</h2>
+
+</header>
+<form action="enviar"method="post">
+  <fieldset>
+    <label for="produtos">Produto: </label>
+    <select id="produtos" name="produtos" required>
+      <option value="produtos">Pão Françês</option>
+      <option value="produtos">Pão Manual</option>
+      <option value="produtos">Pão de Queijo</option>
+      <option value="produtos">Salgado</option>
+      <option value="produtos">Bolo</option>
+    </select>
+    <label for="quantidade">Quantidade</label>
+    <input type="number" placeholder=" Digite a quantidade" id="quantidade" required>
+  </fieldset>
+  <p></p>
+  <button type="submit">Pedir</button>
+  <button type="reset">Cancelar</button>
+</form>
+</body>
+</html>

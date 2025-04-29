@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <title>Metodo de Pagamento</title>
+</head>
+<body bgcolor="#ff174c" text="#f0f8ff">
+<header>
+  <h1><strong>IFOOD</strong></h1>
+  <h2>Escolha o metodo de pagamento: </h2>
+
+</header>
+<form action="">
+  <fieldset>
+    <label for="valor">Digite o Valor da compra: R$</label>
+    <input type="number" name="valor" id="valor" min="1" max="1000" required>
+    <label for="Metodos">Metodos de Pagamento: </label>
+    <select id="Metodos" name="Metodos" required>
+      <option value="Metodos">Cartão de Crédito</option>
+      <option value="Metodos">Cartão de Débito</option>
+      <option value="Metodos">Boleto</option>
+      <option value="Metodos">Pix</option>
+    </select>
+  </fieldset>
+  <p></p>
+  <button type="submit">Comprar</button>
+  <button type="reset">Cancelar</button>
+</form>
+</body>
+</html>
