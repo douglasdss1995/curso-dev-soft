@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Sugestão/Reclamação</title>
+</head>
+<body>
+    <h1>Formulario Sugestão/Reclamação</h1>
+    <form action="/enviar" method="post">
+        <fieldset>
+            <legend>Deixe sua Reclamação ou Sugestão</legend>
+            <label for="opcao">Selecione:</label>
+            <input type="radio" name="opcao" id="opcao">
+            <label for="radio">Reclamação</label>
+            <input type="radio" name="opcao" id="opcao">
+            <label for="radio">Sugestão</label><br>
+            <textarea name="msg" id="msg" placeholder="Deixe seu comentario"></textarea>           </textarea>
+    
+        </fieldset><br>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

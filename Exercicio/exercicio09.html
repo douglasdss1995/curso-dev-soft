@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante da Alice</title>
+</head>
+<body>
+    <h1>Restaurante - reserva de mesa</h1>
+    <form action="/enviar" method="post">
+        <fieldset>
+            <legend>Reserva de mesa</legend>
+            <label for="qtde">Numeros de pessoas</label>
+            <select name="qtde">
+                <option value="1">1 pessoa</option>
+                <option value="2">2 pessoa</option>
+                <option value="3">3 pessoa</option>
+                <option value="4">4 pessoa</option>
+                <option value="5">5 pessoa</option>
+                <option value="6">6 pessoa</option>
+                <option value="7">7 pessoa</option>
+            </select><br>s
+            <textarea name="msg" id="msg" placeholder="Deixe seu comentário"></textarea><br>
+        </fieldset><br>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

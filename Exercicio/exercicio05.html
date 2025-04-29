@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+</head>
+
+<body>
+    <h1>Formulário de Pedido</h1>
+    <form action="/enviar" method="post">
+        <fieldset>Produtos
+            <label for="produto">produto</label>
+            <select name="produto" id="produto" required>
+                <option value="1">Notebook</option>
+                <option value="2">Mouse</option>
+                <option value="3">Teclado</option>
+            </select><br>
+
+            <label for="quantidade">quantidade</label>
+            <input type="number" name="quantidade" id="quantidade" placeholder="Digite a quantidade" required>
+
+        </fieldset>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

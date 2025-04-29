@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa de satisfação</title>
+</head>
+<body>
+    <h1>Formulário de Pesquisa e Satisfação</h1>
+    <form action="/enviar" method="post">
+        <fieldset>
+            <legend>Feedback de satisfação</legend>
+            <label for="nota">Avalie com uma nota de 1 a 10</label><br>
+            <input type="range" name="nota" id="nota" min="1" max="10" placeholder="Selecione uma nota"><br>
+            <label for="msg">Deixe sua sugestão ou críticas</label><br>
+            <textarea name="msg" id="msg" placeholder="Deixe um comentario ou sugestões"></textarea>
+        </fieldset>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>

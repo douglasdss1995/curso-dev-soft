@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+</head>
+<body>
+    <h1>Formulário de Login</h1>
+    <form action="/enviar" method="post">
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+            <label for="name" id="name">Nome do usuário: </label>
+            <input type="text" name="name" id="name" value="" placeholder="Digite seu nome de usuário" required><br>
+
+            <label for="senha" id="senha">Senha: </label>
+            <input type="password" name="password" id="password" value="" placeholder="Digite uma senha com minimo 8 caracteres" required><br>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</body>
+</html>
