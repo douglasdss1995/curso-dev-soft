@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Doação</title>
+</head>
+<body>
+
+<h2>Formulário de Doação</h2>
+
+<form action="/processa-doacao" method="post">
+  <label for="nome">Igreja Senhora dos Navegantes:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="valor">Valor (R$):</label><br>
+  <input type="number" id="valor" name="valor" min="1" required><br><br>
+
+  <label for="pagamento">Forma de Pagamento:</label><br>
+  <select id="pagamento" name="pagamento" required>
+    <option value="">Selecione</option>
+    <option value="pix">PIX</option>
+    <option value="cartao">Cartão</option>
+    <option value="boleto">Boleto</option>
+  </select><br><br>
+
+  <button type="submit">Enviar Doação</button>
+  <button type="reset">cancelar doação</button>
+</form>
+
+</body>
+</html>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Reclamação/Sugestão</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Formulário de Reclamação/Sugestão</h1>
+  <form id="feedbackForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" required><br>
+      <option value="">Selecione</option>
+      <option value="reclamacao">Reclamação</option>
+      <option value="sugestao">Sugestão</option>
+    </select>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+    <button type="rerset">cancelar</button>
+  </form>
+
+  <p id="status"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
