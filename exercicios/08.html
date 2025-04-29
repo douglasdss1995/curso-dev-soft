@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Doação</title>
+</head>
+<body>
+<h2>Faça uma Doação</h2> <!-- tag cabeçalho nivel 2 -->
+<form action="processar_doacao.php" method="post">
+  <label for="valor">Valor da Doação (R$):</label><br>
+  <input type="number" id="valor" name="valor" min="1" required><br><br>
+  <label for="pagamento">Forma de Pagamento:</label><br>
+  <select id="pagamento" name="pagamento" required>
+    <option value="" disabled selected>Selecione</option>
+    <option value="credito">Cartão de Crédito</option>
+    <option value="debito">Cartão de Débito</option>
+    <option value="pix">PIX</option>
+    <option value="boleto">Boleto Bancário</option>
+    <option value="agiota">Agiotagem</option>
+  </select><br><br>
+
+  <button type="submit">Doar</button>
+  <button type="reset">Cancelar</button>
+</form>
+</body>
+</html>
+</body>
+</html>
