@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>Finalize sua compra</h1>
+
+<form action="">
+  <fieldset>
+    <legend><strong>Pagamento:</strong></legend>
+    <label for="cash"><strong>Valor: </strong>:</label>
+    <input type="number" id="cash" placeholder="Informe o valor do seu pedido" required><br>
+
+    <div>
+      <label for="pagamento"><strong>Forma de pagamento:</strong></label>
+      <select name="pagamento" id="pagamento" required>
+        <option value="debito">Debito</option>
+        <option value="credito">Credito</option>
+        <option value="boleto">Boleto</option>
+        <option value="pix">Pix</option>
+      </select>
+    </div>
+
+  </fieldset>
+
+
+  <button type="submit">Enviar</button>
+  <button type="reset">Limpar</button>
+
+</form>
+
+
+</body>
+</html>
