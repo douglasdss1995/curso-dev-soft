@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Reclamação/Sugestão</title>
+</head>
+<body>
+<h1>Formulário de Reclamação/Sugestão</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Tipo de Feedback</legend>
+
+        <input type="radio" id="reclamacao" name="tipo" value="reclamacao" required>
+        <label for="reclamacao">Reclamação</label><br>
+
+        <input type="radio" id="sugestao" name="tipo" value="sugestao" required>
+        <label for="sugestao">Sugestão</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Observações</legend>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+
+</form>
+</body>
+</html>

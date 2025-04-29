@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Reclamação/Sugestão</title>
+  <style>
+    #imagemFlamengo {
+      display: none;
+      margin-top: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<h1>Formulário de Reclamação/Sugestão</h1>
+<form onsubmit="return validarFormulario()">
+  <fieldset>
+    <legend>Classificação</legend>
+    <label>
+      <input type="radio" name="tipo" value="reclamacao" required onclick="preencherTexto('reclamacao')">
+      Reclamação
+    </label><br>
+    <label>
+      <input type="radio" name="tipo" value="sugestao" required onclick="preencherTexto('sugestao')">
+      Sugestão
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Observações</legend>
+    <textarea id="observacoes" name="observacoes" rows="6" cols="40" required></textarea>
+  </fieldset>
+
+  <!-- Imagem do Flamengo -->
+  <img id="imagemFlamengo" src="https://upload.wikimedia.org/wikipedia/pt/2/2e/Clube_de_Regatas_do_Flamengo_logo.svg" alt="Flamengo">
+
+  <br><br>
+  <button type="submit">Enviar</button>
+  <button type="reset" onclick="resetarImagem()">Cancelar</button>
+</form>
+
+<script>
+  function preencherTexto(tipo) {
+    const textarea = document.getElementById("observacoes");
+    const imagem = document.getElementById("imagemFlamengo");
+
+    if (tipo === "reclamacao") {
+      textarea.value = "Reclamação sobre o Flamengo.";
+      imagem.style.display = "block"; // mostra a imagem
+    } else {
+      textarea.value = "";
+      imagem.style.display = "none"; // esconde a imagem
+    }
+  }
+
+  function resetarImagem() {
+    document.getElementById("imagemFlamengo").style.display = "none";
+  }
+
+  function validarFormulario() {
+    const tipoSelecionado = document.querySelector('input[name="tipo"]:checked');
+    const observacoes = document.getElementById("observacoes").value.trim();
+
+    if (!tipoSelecionado || observacoes === "") {
+      alert("Todos os campos devem ser preenchidos.");
+      return false;
+    }
+    alert("Formulário enviado com sucesso!");
+    return true;
+  }
+</script>
+</body>
+</html>

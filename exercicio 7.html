@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva de Restaurante</title>
+</head>
+<body>
+<h1>Formulário da Reserva de Restaurante</h1>
+
+<form>
+  <fieldset>
+    <legend>Informações da Reserva</legend>
+
+    <label for="pessoas">Número de Pessoas:</label>
+    <input type="number" id="pessoas" name="pessoas" min="1" required>
+    <br><br>
+
+    <label for="observacoes">Observações:</label><br>
+    <textarea id="observacoes" name="observacoes" rows="4" cols="40" required></textarea> define o número de linhas visíveis (altura) , define o número de colunas visíveis (largura).
+
+  </fieldset>
+  <br>
+
+  <button type="submit">Enviar</button>
+  <button type="reset">Cancelar</button>
+
+</form>
+</body>
+</html>

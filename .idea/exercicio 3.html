@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido E-Commerce</title>
+</head>
+<body>
+<h1>Formulário de Pedido</h1>
+
+<form>
+    <fieldset>
+        <legend>Informações do Pedido</legend>
+
+        <label for="produto">Produto:</label>
+        <select id="produto" name="produto" required>
+            <option value="">Selecione</option>
+            <option value="camiseta">Camiseta</option>
+            <option value="tenis">Tênis</option>
+            <option value="mochila">Mochila</option>
+        </select>
+        <br><br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" required>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+
+</form>
+</body>
+</html>
