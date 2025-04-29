@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Restaurante</title>
+</head>
+<body>
+<h2>Reserva de Restaurante</h2>
+<form action="/enviar" method="post">
+    <fieldset>
+        <legend>Área de Reserva</legend>
+        <label for="quantidade">Quantidade de Pessoas: </label>
+        <input type="number" id="quantidade" name="quantidade" value="" required><br>
+        <label for="observacao"> Observação: </label><br>
+        <textarea name="observacao" id="observacao" cols="30" rows="5" required></textarea><br>
+    </fieldset>
+    <button type="submit">Reservar</button>
+    <button type="reset">Cancelar</button>
+</form>
+
+</body>
+</html>

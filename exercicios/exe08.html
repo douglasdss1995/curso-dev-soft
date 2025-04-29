@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Doação</title>
+</head>
+<body>
+<h2>Formulário de Doação</h2>
+<form action="/enviar" method="post">
+    <fieldset>
+        <legend>Área de Doação</legend>
+        <label for="valor">Valor a ser doado: </label>
+        <input type="number" id="valor" name="valor" placeholder="R$" value="" required><br>
+        <label for="pagamento" >Forma de Pagamento:</label>
+        <select name="pagamento" id="pagamento" required>
+            <option value="1">Dinheiro</option>
+            <option value="2">Cartão de Crédito</option>
+            <option value="3">Pix</option>
+            <option value="4">Boleto</option>
+        </select><br>
+    </fieldset>
+    <br>
+    <button type="submit">Doar</button>
+    <button type="reset">Cancelar</button>
+</form>
+
+</body>
+</html>
