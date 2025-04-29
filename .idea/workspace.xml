@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="912acb76-a8d8-40fe-a1bb-d68243fb073a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/01.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Alexandro&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/curso-dev-soft&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Alexandro",
+    "last_opened_file_path": "C:/Projetos/curso-dev-soft",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,7 +79,8 @@
       <workItem from="1745508799355" duration="111000" />
       <workItem from="1745591122043" duration="597000" />
       <workItem from="1745593197616" duration="35000" />
-      <workItem from="1745842705763" duration="8531000" />
+      <workItem from="1745842705763" duration="8858000" />
+      <workItem from="1745928377470" duration="9327000" />
     </task>
     <servers />
   </component>
