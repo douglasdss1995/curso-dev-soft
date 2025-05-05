@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HSL</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined">
 
     <style>
+        .cor-hsl {
+            color: hsl(230, 100%, 50%);
+        }
+
+        .cor-hsla {
+            color: hsl(230, 100%, 50%);
+        }
+
         .icon {
             font-size: 50px;
             margin: 30px;
@@ -16,13 +24,18 @@
         .icon:hover {
             transform: scale(1.2);
         }
+
+        .icon:hover {
+            transform: scale(3) rotateX(300deg);
+        }
     </style>
 
 </head>
 <body>
 
-<i class="material-icons icon" STYLE="color: blueviolet">home</i>
-<i class="material-icons icon" STYLE="color: blueviolet">star</i>
+<i class="material-icons outlined icon cor-hsl">settings</i>
+<i class="material-icons outlined icon cor-hsla">settings</i>
+
 
 </body>
 </html>
