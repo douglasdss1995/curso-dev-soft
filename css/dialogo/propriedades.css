@@ -1,0 +1,22 @@
+
+.caixa-de-dialogo{
+    border: 1px ;
+
+}
+.titulo{
+    background-color: rgba(0, 0, 0, 0.57);
+    margin: 2px;
+
+
+}
+.corpo{
+    background-color: rgba(115, 111, 111, 0.38);
+    margin: 0 auto;
+}
+.rodape{
+    margin: 2px;
+    background-color: rgba(115, 111, 111, 0.38);
+}
+button{
+
+}
