@@ -1,0 +1,26 @@
+.container {
+
+}
+
+.caixa-de-dialogo {
+    margin: 1em;
+    height: 600px;
+    width: auto;
+    background-color: #ccc;
+    border-radius: 1rem;
+    border: 2px solid #f8f8f8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: 0.1rem solid #f8f8f8;
+    backgroud-color: #424242;
+    border-radius: 1rem 1rem 0 0;
+    color: white;
+
+}
