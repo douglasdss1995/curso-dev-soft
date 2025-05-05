@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset>
+  <legend>Formulario de Doação</legend>
+  <label for="valor">Valor</label>
+  <input type="number" name="valor" id="valor" placeholder="Informe o valor a ser doado" min="1000" required>
+
+  <select name="pagamento" id="pagamento">
+    <option value="dinheiro">Dinheiro</option>
+    <option value="débito">Débito</option>
+    <option value="crédito">Crédito</option>
+    <option value="pix">Pix</option>
+  </select>
+</fieldset>
+
+<button type="submit">Doar</button>
+<button type="reset">Limpar</button>
+</body>
+</html>
