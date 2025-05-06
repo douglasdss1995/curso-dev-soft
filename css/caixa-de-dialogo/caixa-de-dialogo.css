@@ -2,10 +2,10 @@
     max-width: 800px;
 }
 .caixa-dialog{
-    background-color: #cccc;
+    margin: 1em;
     width: 600px;
-    margin: auto;
     height: auto;
+    background-color: #ccc;;
     border-radius: 1rem;
     border: 2px solid #f8f8f8;
     box-shadow: 2px 20px 10px rgba(0, 0, 0, 0.2);
@@ -31,17 +31,20 @@
     a:hover{
         color: #4CAF50;
     }
+.corpo::first-letter{
+    padding: 2rem;
+}
 
 }
 .rodape{
     text-align: right;
     padding-right: 0.5rem;
-    font-size: italic;
+    font-style: italic;
     border-top: 0.1rem solid #f8f8f8;
 }
 .botton{
     padding: 0.5rem 1rem;
-    margin-top: 0 0.2rem;
+    margin-top: 0.2rem;
     border-radius: 0.3rem;
     border: none;
 }
