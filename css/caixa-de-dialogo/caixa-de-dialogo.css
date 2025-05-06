@@ -13,8 +13,8 @@
 .titulo{
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
     padding: 1rem;
+    font-width: bold;
     border-bottom: 0.1rem solid #f8f8f8;
     background-color: #424242;
     border-radius: 1rem 1rem 0 0;
@@ -36,19 +36,21 @@
 }
 
 }
+
+.botton{
+    padding: 0.5rem 1rem;
+    margin-top: 0.2rem;
+    border: none;
+    border-radius: 0.3rem;
+
+}
+.botton:hover{
+    background-color: white;
+    font-weight: bold;
+}
 .rodape{
     text-align: right;
     padding-right: 0.5rem;
     font-style: italic;
     border-top: 0.1rem solid #f8f8f8;
-}
-.botton{
-    padding: 0.5rem 1rem;
-    margin-top: 0.2rem;
-    border-radius: 0.3rem;
-    border: none;
-}
-.botton:hover{
-    background-color: white;
-    font-weight: bold;
 }
