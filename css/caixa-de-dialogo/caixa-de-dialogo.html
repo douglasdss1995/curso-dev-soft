@@ -4,74 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Lorem Ipsum</title>
+
     <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+
+        caixa-de-dialogo {
+            margin: 1em;
+            width: 600px;
+            height: auto;
+            background-color: rgba(16, 22, 108, 0.31);
+            border-radius: 1rem;
+            border: 2px solid rgba(18, 17, 23, 0.98);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .container {
-            background-color: #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .titulo {
             text-align: center;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .content {
-            color: #555;
-            text-align: justify;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        button:first-child {
-            background-color: #f0f0f0;
-            color: #333;
-            border: 1px solid #ccc;
-        }
-
-        button:last-child {
-            background-color: #4CAF50;
+            font-size: 2rem;
+            padding: 1rem;
+            font-weight: bold;
+            border-bottom: 0.1rem solid #f8f8f8;
+            background-color: #424242;
+            border-radius: 1rem 1rem 0 0;
             color: white;
         }
+
+        .corpo {
+            padding: 0.5rem 1rem;
+            text-align: justify;
+            line-height: 1.5rem;
+            font-family: "Segoe UI", sans-serif;
+
+            a {
+                text-decoration: none;
+
+                .corpo::first-letter {
+                    padding-left: 2rem;
+                }
+
+                a:hover {
+                    color: #4CAF50;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    margin: 0 0.2rem;
+                    border: none;
+                    border-radius: 0.3rem;
+                }
+
+                button:hover {
+                    background-color: white;
+                    font-weight: bold;
+
+                    .rodape {
+                        text-align: right;
+                        padding: 0.5rem;
+                        font-style: italic;
+                        border-top: 0.1rem solid rgba(23, 17, 17, 0.98);
+
+                    }
+
     </style>
+
 </head>
 <body>
+
 <div class="container">
-    <h2>O que é Lorem Ipsum?</h2>
-    <div class="content">
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-    </div>
-    <div class="buttons">
-        <button>Cancelar</button>
-        <button>Confirmar</button>
+    <div class="caixa-de-dialogo">
+        <div class="titulo">0 que é Lorem Ipsum?</div>
+        <div class="corpo">
+            O que é Lorem Ipsum?
+            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,e vem sendo
+            utilizado desde o século XVI,quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou
+            para fazer um livro de modelos de tipos.Lorem Ipsum sobreviveu não só a cinco séculos,como também ao salto
+            para a editoração eletrônica,permanecendo essencialmente inalterado.Se popularizou na década de 60,quando
+            a Letraset lançou decalques contendo passagens de Lorem Ipsum,e mais recentemente quando passou a ser
+            integrado a softwares de editoração eletrônica como Aldus PageMaker.
+        </div>
+        <div class="rodape">
+            <button type="reset">Cancelar</button>
+            <button type="submit">Confirmar</button>
+        </div>
     </div>
 </div>
-</body>
-</html>
