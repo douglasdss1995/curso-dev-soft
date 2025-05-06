@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>boletim escolar</title>
+    <style>
+        img{
+            width: 70px;
+            height: 90px;
+            margin: 0;
+        }
+        tbody:hover {
+            background-color: #86aedc;
+        }
+        .dados{
+            margin-left: 10rem;
+            align-items: center;
+        }
+        input {
+            margin: 5px;
+            text-align: center;
+            padding:  2px 14px;
+            border-radius: 2rem;
+            border: none;
+        }
+
+        :root {
+            --cor-fundo: #018a2d;
+            --cor-destaque: #16213e;
+            --cor-texto: #e6e6e6;
+            --cor-borda: #0f3460;
+            --cor-media: #4ecca3;
+            --cor-aprovado: #4ecca3;
+            --cor-reprovado: #e94560;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--cor-destaque);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--cor-texto);
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--cor-borda);
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid var(--cor-borda);
+        }
+
+        th {
+            background-color: rgba(15, 52, 96, 0.7);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(15, 52, 96, 0.2);
+        }
+
+        tr:hover {
+            background-color: rgb(66, 58, 152);
+        }
+
+        .media {
+            font-weight: bold;
+            color: var(--cor-media);
+        }
+
+        .aprovado {
+            color: var(--cor-aprovado);
+        }
+
+        .reprovado {
+            color: var(--cor-reprovado);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #aaaaaa;
+        }
+
+        .bimestre-header {
+            background-color: rgba(15, 52, 96, 0.5) !important;
+        }
+    </style>
+</head>
+<body>
+<img src="https://vectorseek.com/wp-content/uploads/2023/08/UFAM-Logo-Vector.svg-.png" alt="ufam">
+<div class="dados">
+    <label for="nome">Nome Completo do Aluno: </label>
+    <input type="text" placeholder="Nome do Aluno" id="nome">
+    <label for="matricula"> Codigo de Matricula: </label>
+    <input type="number" placeholder="Codigo de matricula" min="1" max="10000000" id="matricula">
+</div>
+<div class="container">
+    <table>
+        <caption><h1>Boletim Escolar</h1></caption>
+        <thead>
+        <tr>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="4" class="bimestre">Bimestres</th>
+            <th rowspan="2">Média Final</th>
+            <th rowspan="2">Situação</th>
+        </tr>
+        <div class="bimestres">
+            <tr>
+                <th class="bimestre-header">1º</th>
+                <th class="bimestre-header">2º</th>
+                <th class="bimestre-header">3º</th>
+                <th class="bimestre-header">4º</th>
+            </tr>
+        </div>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Lingua Portuguesa</td>
+            <td>7.3</td>
+            <td>8.0</td>
+            <td>6.5</td>
+            <td>7.0</td>
+            <td class="media">7.3</td>
+            <td class="aprovado">Aprovado</td>
+        </tr>
+        <tr>
+            <td>Matemática</td>
+            <td>6.0</td>
+            <td>5.5</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td class="media">6.8</td>
+            <td class="reprovado">Reprovado</td>
+        </tr>
+        <tr>
+            <td>História</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>9.5</td>
+            <td>8.0</td>
+            <td class="media">8.8</td>
+            <td class="aprovado">Aprovado</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>5.0</td>
+            <td>6.5</td>
+            <td>4.5</td>
+            <td>5.0</td>
+            <td class="media">7.3</td>
+            <td class="reprovado">Reprovado</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>6.0</td>
+            <td>9.5</td>
+            <td>7.5</td>
+            <td>4.0</td>
+            <td class="media">6.7</td>
+            <td class="reprovado">Reprovado</td>
+        </tr>
+        </tbody>
+        <tfoot class="footer">
+        <tr>
+            <td colspan="7">
+                <p>Escola Estadual Ensino Médio Integrado</p>
+                <p>Secretaria de Educação - 2025</p>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>

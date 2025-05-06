@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slidenav Exemplo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo da Slidenav */
+    .slidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .slidenav a {
+      padding: 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .slidenav a:hover {
+      background-color: #575757;
+    }
+
+    .slidenav .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+      color: white;
+    }
+
+    /* Botão de abrir */
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Botão para abrir o menu -->
+<button class="openbtn" onclick="openNav()">☰ Abrir Menu</button>
+
+<!-- Menu lateral (Slidenav) -->
+<div id="mySlidenav" class="slidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Início</a>
+  <a href="#">Sobre</a>
+  <a href="#">Serviços</a>
+  <a href="#">Contato</a>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySlidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySlidenav").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
