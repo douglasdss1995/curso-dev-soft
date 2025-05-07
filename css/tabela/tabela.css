@@ -9,6 +9,17 @@
 
 }
 
+.info-aluno {
+    background-color: var(--cor-destaque);
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;]
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--cor-texto);
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
