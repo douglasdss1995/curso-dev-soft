@@ -1,0 +1,12 @@
+.wrap{
+    flex-wrap: wrap;
+    flex-shrink: 3;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
