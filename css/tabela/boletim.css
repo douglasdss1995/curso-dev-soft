@@ -83,3 +83,9 @@ tr:hover {
 .bimestre-header {
     background-color: rgba(15, 52, 96, 0.5) !important;
 }
+
+.info-aluno{
+    background-color: var(--cor-destaque);
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+}

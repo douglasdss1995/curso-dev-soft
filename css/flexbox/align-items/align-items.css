@@ -17,3 +17,13 @@
 .align-items-stretch {
     align-items: stretch;
 }
+
+.container{
+    height: 200px;
+    flex-direction: column;
+
+    div{
+        width: auto;
+        height: auto;
+    }
+}
