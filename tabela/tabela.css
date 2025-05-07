@@ -1,13 +1,15 @@
-:root{
-    --cor-fundo:#10102e;
-    --cor-destaque:#16213e;
-    --cor-texto:#e6e6e6;
-    --cor-borda:#0f3460;
-    --cor-media:#4ecca3;
-    --cor-aprovado:#4ecca3;
-    --cor-reprovado:#e94560;
+:root {
+    --cor-fundo: #10102e;
+    --cor-destaque: #16213e;
+    --cor-texto: #e6e6e6;
+    --cor-borda: #0f3460;
+    --cor-media: #4ecca3;
+    --cor-aprovado: #4ecca3;
+    --cor-reprovado: #e94560;
+    --cor-header: rgba(29, 80, 18, 0.87);
 
 }
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -30,9 +32,9 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
+    color: var(--cor-texto);
     margin-bottom: 30px;
-    border-bottom: 2px solid #424242;
+    border-bottom: 2px solid var(--cor-borda);
     padding-bottom: 10px;
 }
 
@@ -42,21 +44,49 @@ table {
     margin-bottom: 30px;
 }
 
+thead {
+    background-color: var(--cor-destaque);
+}
+
 th, td {
     padding: 12px 15px;
     text-align: center;
     border: 1px solid var(--cor-borda);
 }
 
-th{
-    background-color: rgba(15,52,96,0.7);
+th {
+    background-color: rgba(10, 63, 124, 0.7);
     font-weight: bold;
 }
 
-tr:nth-child(even){
-    background-color: rgba(15,52,96,0.7);
+tbody tr:nth-child(even) {
+    background-color: rgba(10, 90, 186, 0.2);
 }
 
-th:hover{
-    background-color: rgba(157,184,211,0.5);
+th:hover {
+    background-color: rgba(84, 188, 15, 0.5);
+}
+
+.media {
+    font-weight: bold;
+    color: var(--cor-media);
+}
+
+.aprovado {
+    color: var(--cor-aprovado)
+}
+
+.reprovado {
+    color: var(--cor-reprovado)
+}
+
+. footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+. bimestre-header {
+    background-color: rgba(84, 188, 15, 0.5) !important;
 }
