@@ -1,0 +1,102 @@
+:root {
+    --cor-fundo: #1a1a2e;
+    --cor-destaque: #16213e;
+    --cor-texto: #e6e6e6;
+    --cor-borda: #0f3460;
+    --cor-media: #4ecca3;
+    --cor-aprovado: #4ecca3;
+    --cor-reprovado: #e94560;
+    --cor-header: rgb(18, 60, 97);
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cor-destaque);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+thead {
+    background-color: var(--cor-header);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+
+th {
+    background-color: rgba(15, 52, 96, 0.7);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(15, 52, 96, 0.2);
+}
+
+tbody > tr:hover {
+    background-color: rgba(157, 184, 211, 0.5);
+}
+
+.media {
+    font-weight: bold;
+    color: var(--cor-media);
+}
+
+.aprovado {
+    color: var(--cor-aprovado);
+}
+
+.reprovado {
+    color: var(--cor-reprovado);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.bimestre-header {
+    background-color: rgba(15, 52, 96, 0.5) !important;
+}
+
+.info-aluno {
+    background-color: var(--cor-destaque);
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+
+    h2 {
+        text-align: center;
+        background-color: var(--cor-header);
+        padding: 0.5rem 1rem;
+    }
+}
