@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <title>boletim escolar</title>
     <style>
-        img{
+        img {
             width: 70px;
             height: 90px;
             margin: 0;
         }
-        tbody:hover {
+
+        tbody > tr:hover {
             background-color: #86aedc;
         }
-        .dados{
+
+        .dados {
             margin-left: 10rem;
             align-items: center;
         }
+
         input {
             margin: 5px;
             text-align: center;
-            padding:  2px 14px;
+            padding: 2px 14px;
             border-radius: 2rem;
             border: none;
         }
 
         :root {
-            --cor-fundo: #018a2d;
-            --cor-destaque: #16213e;
+            --cor-fundo: #013a13;
+            --cor-destaque: #088132;
             --cor-texto: #e6e6e6;
-            --cor-borda: #0f3460;
+            --cor-borda: #ffffff;
             --cor-media: #4ecca3;
             --cor-aprovado: #4ecca3;
             --cor-reprovado: #e94560;
@@ -74,7 +77,7 @@
         }
 
         th {
-            background-color: rgba(15, 52, 96, 0.7);
+            background-color: rgba(2, 55, 14, 0.7);
             font-weight: bold;
         }
 
@@ -83,7 +86,7 @@
         }
 
         tr:hover {
-            background-color: rgb(66, 58, 152);
+            background-color: rgb(0, 58, 12);
         }
 
         .media {
@@ -107,20 +110,21 @@
         }
 
         .bimestre-header {
-            background-color: rgba(15, 52, 96, 0.5) !important;
+            background-color: rgba(55, 255, 143, 0.5) !important;
         }
     </style>
 </head>
 <body>
-<img src="https://vectorseek.com/wp-content/uploads/2023/08/UFAM-Logo-Vector.svg-.png" alt="ufam">
-<div class="dados">
-    <label for="nome">Nome Completo do Aluno: </label>
-    <input type="text" placeholder="Nome do Aluno" id="nome">
-    <label for="matricula"> Codigo de Matricula: </label>
-    <input type="number" placeholder="Codigo de matricula" min="1" max="10000000" id="matricula">
-</div>
+
+
 <div class="container">
     <table>
+        <div class="dados">
+            <label for="nome">Nome Completo do Aluno: </label>
+            <input type="text" placeholder="Nome do Aluno" id="nome">
+            <label for="matricula"> Codigo de Matricula: </label>
+            <input type="number" placeholder="Codigo de matricula" min="1" max="10000000" id="matricula">
+        </div>
         <caption><h1>Boletim Escolar</h1></caption>
         <thead>
         <tr>
