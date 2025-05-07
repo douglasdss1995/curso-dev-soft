@@ -1,0 +1,23 @@
+.container{
+    height: 200px;
+    flex-direction: column;
+
+    div{
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
+
+.flex-align-items-start{align-items: flex-start}
+
+.flex-align-items-end{align-items: flex-end}
+
+.flex-align-items-center{align-items: center}
+
+.flex-align-items-baseline{align-items: baseline}
+
+.flex-align-items-stretch{align-items: stretch}
+
