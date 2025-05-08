@@ -1,19 +1,23 @@
 .container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    width: 200px;
     height: 200px;
-
-    div{
-        height: auto;
-    }
-
 }
 
 
-.flex-align-items-start{align-items: flex-start}
+.flex-align-content-start{align-content: flex-start}
 
-.flex-align-items-end{align-items: flex-end}
+.flex-align-content-end{align-content: flex-end}
 
-.flex-align-items-center{align-items: center}
+.flex-align-content-center{align-content: center}
 
-.flex-align-items-baseline{align-items: baseline}
+.flex-align-content-stretch{align-content: stretch; div{height: auto}}
 
-.flex-align-items-stretch{align-items: stretch}
+.flex-align-content-space-between{align-content: space-between}
+
+.flex-align-content-space-evenly{align-content: space-evenly}
+
+.flex-align-content-space-around{align-content: space-around}
