@@ -1,0 +1,33 @@
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-baseline {
+    align-content: baseline;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+
+
+    /*div {*/
+    /*    width: auto;*/
+    /*    height: auto;*/
+    /*}*/
+}
