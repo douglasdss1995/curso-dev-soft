@@ -1,0 +1,41 @@
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+
+    div {
+        height: auto
+    }
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+}
+
