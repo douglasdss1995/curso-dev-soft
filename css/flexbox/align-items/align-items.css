@@ -18,11 +18,11 @@
     align-items: stretch;
 }
 
-.container{
+.container {
     height: 200px;
     flex-direction: column;
 
-    div{
+    div {
         width: auto;
         height: auto;
     }

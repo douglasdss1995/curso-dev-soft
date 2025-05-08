@@ -1,0 +1,8 @@
+.container{
+    width: 200px;
+    flex-wrap: wrap;
+    row-gap: 10px; /*Espaço de 10px entre as linhas  *!*/
+    column-gap: 20px; /*Espaço de 20px entre as colunas  *!*/
+    /*gap: 20px; Espaço de 20px entre todos os itens  *!*/
+    /*gap: 10px 20px; 10px entre linhas e 20px entre colunas *!*/
+}
