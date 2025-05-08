@@ -1,0 +1,6 @@
+.container{
+    width: 200px;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 200px;
+}
