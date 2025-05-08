@@ -1,0 +1,12 @@
+.container{
+
+    height: 200px;
+    background-color: #0c3fc2;
+
+    display: flex;
+    gap: 15px;
+}
+:root{
+    --cor-do-fundo: rgb(18, 60, 97);
+    display: flex;
+}

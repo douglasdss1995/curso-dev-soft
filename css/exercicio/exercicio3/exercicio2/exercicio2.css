@@ -1,0 +1,33 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.th{
+    background-color: rgba(192, 192, 192, 0.95);
+}
+th{
+    background-color: rgb(12, 63, 194);
+    font-weight: bold;
+}
+.body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--cor-do-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+}
+td, th {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-botton: 30px;
+}
