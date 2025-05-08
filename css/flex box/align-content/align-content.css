@@ -1,25 +1,21 @@
-.align-items-start {
-    align-items: flex-start;
+.align-content-start {
+    align-content: flex-start;
 }
 
-.align-items-end {
-    align-items: flex-end;
+.align-content-end {
+    align-content: flex-end;
 }
 
-.align-items-center {
-    align-items: center;
+.align-content-center {
+    align-content: center;
 }
-
-.align-items-baseline {
-    align-items: baseline;
-}
-
-.align-items-stretch {
-    align-items: stretch;
+.align-contents-stretch {
+    align-content: stretch;
 }
 .container{
-    height: 200px;
-div{
-    height: auto;
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 400px;
 }

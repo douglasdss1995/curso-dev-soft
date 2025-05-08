@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>boletim escolar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<style>
+    .container{
+        margin-top: 50px;
+        padding: 0;
+    }
+    .titulo {
+        font-size: 14px;
+        color: white;
+    }
+    .footer{
+        align-items: center;
+    }
+</style>
+<body>
+<div class="container">
+    <caption class="titulo"><h1>Boletim Escolar</h1></caption>
+    <table class="table table-bordered table-hover table-striped table-">
+        <thead>
+        <tr>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="4" class="bimestre-header">Bimestres</th>
+            <th rowspan="2">Média Final</th>
+            <th rowspan="2">Situação</th>
+        </tr>
+        <tr>
+            <th class="bimestre-header">1º</th>
+            <th class="bimestre-header">2º</th>
+            <th class="bimestre-header">3º</th>
+            <th class="bimestre-header">4º</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Lingua Portuguesa</td>
+            <td>7.3</td>
+            <td>8.0</td>
+            <td>6.5</td>
+            <td>7.0</td>
+            <td class="media">7.3</td>
+            <td class="aprovado">Aprovado</td>
+        </tr>
+        <tr>
+            <td>Matemática</td>
+            <td>6.0</td>
+            <td>5.5</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td class="media">6.8</td>
+            <td class="reprovado">Reprovado</td>
+        </tr>
+        <tr>
+            <td>História</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>9.5</td>
+            <td>8.0</td>
+            <td class="media">8.8</td>
+            <td class="aprovado">Aprovado</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>5.0</td>
+            <td>6.5</td>
+            <td>4.5</td>
+            <td>5.0</td>
+            <td class="media">7.3</td>
+            <td class="reprovado">Reprovado</td>
+        </tr>
+        </tbody>
+        <tfoot class="footer">
+        <tr>
+            <td colspan="7">
+                <p>Escola Estadual Ensino Médio Integrado</p>
+                <p>Secretaria de Educação - 2025</p>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>

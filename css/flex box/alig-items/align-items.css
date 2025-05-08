@@ -18,6 +18,6 @@
     align-items: stretch;
 }
 .container{
-    height: auto;
-    width: auto;
+    height: 200px;
+
 }
