@@ -1,0 +1,23 @@
+.card {
+    width: 300px;
+    margin: 1rem;
+}
+
+.titulo {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+
+    background-color: rgba(168, 168, 168, 0.15);
+}
+
+.descricao {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.conteudo {
+    padding: 10px;
+    font-size: 1rem;
+}

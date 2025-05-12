@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(204, 204, 204, 0.34);
+    padding: 0.5rem;
+}
+
+p {
+    margin: 0;
+}
