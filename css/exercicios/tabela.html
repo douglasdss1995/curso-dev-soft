@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Produtos</title>
+  <style>
+    :root{
+      --cor-fundo: #ffffff;
+      --cor-texto: #000000;
+      --cor-borda: #000000;
+    }
+    body{
+      font-family:"Poppins",sans-serif;
+      font-weight: 300;
+      color:var(--cor-texto);
+      margin: 0;
+      padding:20px;
+    }
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1{
+      text-align: center;
+      color:var(--cor-texto);
+    }
+    table{
+      width: 400px;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th,td{
+      padding: 12px 15px;
+      text-align: center;
+      border: 1px solid var(--cor-borda);
+    }
+    th{
+      background-color: rgba(26, 93, 255, 0.7);
+      font-weight: bold;
+      color: white;
+    }
+    tr:nth-child(even){
+      background-color: rgba(90, 2, 163, 0.2);
+    }
+    tr:hover{
+      background-color: rgba(0, 123, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <table>
+    <caption><h1>Tabela de Produtos</h1></caption>
+    <thead>
+    <tr>
+      <th rowspan="1">Nome do Produto</th>
+      <th rowspan="1">Categoria</th>
+      <th rowspan="1">Preço</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Notebook Dell</td>
+      <td class="categoria">Eletronicos</td>
+      <td class="preco">R$ 3.500,00</td>
+    </tr>
+    <tr>
+      <td>Camiseta</td>
+      <td class="categoria">Vestuario</td>
+      <td class="preco">R$ 45,00</td>
+    </tr>
+    <tr>
+      <td>Caneca Personalizada</td>
+      <td class="categoria">Decoracao</td>
+      <td class="preco">R$ 25,00</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
