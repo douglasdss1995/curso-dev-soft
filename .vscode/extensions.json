@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-edgedevtools.vscode-edge-devtools",
+        "github.copilot",
+        "ms-vscode.live-server",
+        "alefragnani.project-manager"
+    ]
+}
