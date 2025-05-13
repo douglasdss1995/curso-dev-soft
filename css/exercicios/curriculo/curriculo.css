@@ -11,3 +11,17 @@
 p {
     margin: 0;
 }
+
+.dados-pessoais {
+    border-top: 1px solid var(--cor-media);
+    padding-top: 0.5rem;
+
+    h3::first-letter {
+        border-bottom: 5px solid var(--cor-media);
+    }
+
+    div {
+        padding: 0.5rem;
+    }
+
+}
