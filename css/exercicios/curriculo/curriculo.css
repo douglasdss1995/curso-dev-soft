@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --border: #cccccc;
+}
+
 .header {
     background-color: rgba(204, 204, 204, 0.34);
     padding: 0.5rem;
@@ -10,4 +14,36 @@
 
 p {
     margin: 0;
+}
+
+.container-fluid {
+    padding: 2rem;
+}
+
+.dados-pessoais {
+    border-top: 1px solid var(--border);
+    padding-top: 0.5rem;
+
+    h3::first-letter {
+        border-bottom: 5px solid black;
+    }
+
+    div {
+        padding: 0.5rem;
+    }
+}
+
+.perfil {
+    border-top: 1px solid var(--border);
+    padding-top: 0.5rem;
+    border-left: 1px solid var(--border);
+
+    div {
+        margin-bottom: .5rem;
+        border-bottom: 1px solid var(--border);
+
+        p {
+            padding: 0 1rem;
+        }
+    }
 }
