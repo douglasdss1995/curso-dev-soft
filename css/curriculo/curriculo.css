@@ -1,0 +1,19 @@
+.dadospessoais{
+
+}
+.header{
+    background-color: rgba(28, 94, 180, 0.5);
+    padding: 0.5rem 1rem;
+}
+.icon-rgb{
+    color:#4caf50;
+}
+.mr-2{
+    margin-right: 0.5rem;
+}
+a{
+    text-decoration: none;
+}
+.ENDEREÇO{
+    font-size: 0.8rem;
+}
