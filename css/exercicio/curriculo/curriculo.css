@@ -1,6 +1,75 @@
-.dadospessoais{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --border-color: #ccc;
+}
+
+.dadospessoais {
+    border-top: 3px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    padding-top: 0.5rem;
+}
+
+p {
+    margin: 0;
 }
 
 .header {
-    background-color: var(--cor-destaque);
+    background-color: rgba(15, 64, 188, 0.5);
+    padding: 0.5rem 1rem;
 }
+
+.icon-rgb {
+    color: #4CAF50;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-facebook {
+    font-size: 1.5rem;
+}
+
+.competencias {
+    margin-top: 1rem;
+}
+
+.perfil {
+    border-top: 3px solid var(--border-color);
+    padding-top: 0.5rem;
+    border-left: 3px solid var(--border-color);
+}
+
+.h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.div {
+    padding: 0.5rem;
+}
+
+.infos {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mail {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nacionalidade {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
