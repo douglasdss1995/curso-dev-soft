@@ -1,0 +1,38 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .main-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-weight: bold;
+    }
+    .section-title {
+      font-weight: bold;
+      border-bottom: 2px solid #000;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+    .left-column {
+      background-color: #f3f3f3;
+      padding: 20px;
+    }
+    .left-column h6 {
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .item-list {
+      margin-bottom: 15px;
+    }
+    .item-list small {
+      display: block;
+    }
+    .text-muted {
+      border-bottom: 2px solid #ded9d9;
+    }
