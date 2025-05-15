@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <!-- O conteúdo será criado via JavaScript-->
+    </div>
+    <script>
+      // Obter referência do container onde colocaremos os elementos
+      const container = document.getElementById("app");
+
+      // Criar a label
+      const label = document.createElement("label");
+      label.htmlFor = "frutas-select";
+      label.textContent = "Escolha uma fruta: ";
+      label.style.fontWeight = "bold";
+      label.classList.add("form-label");
+      label.classList.add("m-1");
+    </script>
+  </body>
+</html>
