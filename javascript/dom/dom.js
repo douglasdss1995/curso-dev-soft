@@ -66,4 +66,4 @@ attr = elemento.getAttribute('type'); // Busca o valor do atributo type da input
 console.log(attr);
 //Altera o atributo type da input para number
 elemento.setAttribute('type', 'number');
-elemento.removeAttribute('placeholder'); // Remove o atributo name da input nome
+// elemento.removeAttribute('placeholder'); // Remove o atributo name da input nome
