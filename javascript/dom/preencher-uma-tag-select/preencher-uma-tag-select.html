@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <di class="container" id="app">
+    </di>
+    <script>
+        //obter  referencia do container onde colocaremos os elementos
+        const container = document.getElementById('app');
+
+        //criar a label
+        const label = document.createElement('label');
+        label.htmlFor = 'frutas-select';
+        label.textContent = 'Escolha uma fruta:';
+        label.style.fontWeight = 'bold';
+        label.classList.add('form-label');
+        label.classList.add('m-1');
+
+        //criar o select
+        const select = document.createElement('select');
+        select.id = 'frutas-select';
+        select.className = 'form-select';
+
+        //lista de frutas para popular os options
+        const fruits = ['maça','banana','laranja','uva','abacaxi'];
+
+        //criar options e adicionar ao select
+        fruits.forEach(fruit => {
+            const option = document.createElement('option');
+            option.value = fruit.toLowerCase();
+            option.textContent = fruit;
+            select.appendChild(option);
+            
+        });
+
+        //Adicionar o select ao container
+        container.appendChild(select);
+
+        //Inserir a label antes do select usando insertBefore
+        container.insertBefore(label,select);
+    </script>
+</body>
+</html>
