@@ -3,6 +3,7 @@
         "ms-edgedevtools.vscode-edge-devtools",
         "github.copilot",
         "ms-vscode.live-server",
-        "alefragnani.project-manager"
+        "alefragnani.project-manager",
+        "formulahendry.code-runner"
     ]
 }
