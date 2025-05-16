@@ -9,7 +9,7 @@ function mouseOver() {
     divResult.textContent = "Você passou o mouse por cima!";
 }
 
-function nouseOut() {
+function mouseOut() {
     divResult.textContent = "Você retirou o mouse!";
     setTimeout(() => {
         divResult.textContent = null;
