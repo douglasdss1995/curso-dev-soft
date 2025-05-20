@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {HelloWorldComponent} from './hello-world/hello-world.component';
+import {TwoWayDataBindingComponent} from './data-binding/two-way-data-binding/two-way-data-binding.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HelloWorldComponent],
+  imports: [TwoWayDataBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
