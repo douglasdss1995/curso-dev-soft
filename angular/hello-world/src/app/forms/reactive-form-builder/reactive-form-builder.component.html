@@ -1,0 +1,23 @@
+<style>
+  input {
+    border-radius: 1rem;
+    padding: .4rem 3rem .4rem .3rem;
+    margin: 10px;
+  }
+
+  input:hover {
+    border: .2rem solid #00ed13;
+  }
+
+
+</style>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="meuForm" class="form">
+  <input formControlName="nome" id="name" placeholder="Nome"/>
+  <div *ngIf="meuForm.get('name')?.invalid && meuForm.get('name')?.touched" style="color: red"></div>
+  <input formControlName="email" id="email" placeholder="Email"/>
+  <div *ngIf="meuForm.get('email')?.invalid && meuForm.get('email')?.touched" style="color: red"></div>
+  <input formControlName="senha" id="senha" placeholder="Senha" type="password"/>
+  <div *ngIf="meuForm.get('senha')?.invalid && meuForm.get('senha')?.touched" style="color: red"></div>
+  <button [disabled]="meuForm.invalid" type="submit">Enviar</button>
+</form>

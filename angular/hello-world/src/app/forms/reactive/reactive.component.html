@@ -1,0 +1,31 @@
+<style>
+  #name {
+    border-radius: .5rem;
+  }
+
+  #email {
+    border-radius: .5rem;
+  }
+
+  #botao {
+    border-radius: .5rem;
+    background: #7a1313;
+    color: aliceblue;
+  }
+
+</style>
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <label for="name">Nome: </label><br>
+  <input formControlName="name" id="name" name="name" type="text">
+  <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched" style="color: red">
+    *O nome é obrigatório. Tamanho mínimo de 3 caracteres, máximo 128 caracteres*
+  </div>
+  <br>
+  <label for="email">E-mail: </label><br>
+  <input formControlName="email" id="email" name="email" type="email">
+  <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" style="color: red">
+    *informe um E-mail válido!*
+  </div>
+  <br>
+  <button id="botao" type="submit">enviar</button>
+</form>
