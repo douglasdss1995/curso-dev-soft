@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
     FormsModule
   ],
   templateUrl: './two-way-data-binding.component.html',
+  standalone: true,
   styleUrl: './two-way-data-binding.component.css'
 })
 export class TwoWayDataBindingComponent {
