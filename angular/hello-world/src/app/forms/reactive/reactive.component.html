@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+
+  <label for="name">Nome:</label>
+  <input formControlName="name" id="name" name="name" type="text"/>
+
+  <div *ngIf="form.get('name')?.invalid &&form.get('name')?.touched">
+    O nome é obrigatorio.
+    Tamanho minimo 3 digitos maximo 128 digitos.
+  </div>
+
+  <br>
+
+  <label for="email">Email: </label>
+  <input formControlName="email" id="email" name="email" type="email">
+  <div *ngIf="form.get('email')?.invalid && form.get('email')?. touched">
+    Informe um email válido.
+
+  </div>
+  <button [disabled]="form.invalid" type="submit">Enviar</button>
+
+</form>
