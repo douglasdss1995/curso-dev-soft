@@ -9,6 +9,6 @@ import {Component} from '@angular/core';
 })
 export class InterpolationComponent {
 
-  ola: string = "Olá";
+  ola: string = "Olá alunos!";
 
 }
