@@ -1,9 +1,11 @@
 import {Component} from '@angular/core';
-import {TwoWayDataBindingComponent} from './data-binding/two-way-data-binding/two-way-data-binding.component';
+import {
+  ReactiveFormBuilderComponent
+} from './forms/reactive-form-builder/reactive-form-builder/reactive-form-builder.component';
 
 @Component({
   selector: 'app-root',
-  imports: [TwoWayDataBindingComponent],
+  imports: [ReactiveFormBuilderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
