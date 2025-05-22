@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+  <label for="idade">Idade: </label>
+  <input formControlName="idade" id="idade" name="idade" type="number">
+</form>
+
+@let idade = form.get('idade')?.value;
+
+@if (idade >= 60) {
+  <h1>Idoso</h1>
+} @else if (idade >= 18) {
+  <h1>Adulto</h1>
+} @else if (idade > 12) {
+  <h1>Adolescente</h1>
+} @else if (idade > 0) {
+  <h1>Criança</h1>
+} @else {
+  <h1>Valor invalido</h1>
+}
+
+<input id="cpf" mask="000.000.000-00" name="cpf" type="text">

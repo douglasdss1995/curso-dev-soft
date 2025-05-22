@@ -11,6 +11,12 @@ import {FormsModule} from '@angular/forms';
 })
 export class TemplateDrivenComponent {
 
-  name: string = '';
+  // name: string = '';
+  person = {
+    name: 'Juan',
+    adress: 'Maryland',
+    fatherName: '',
+    motherName: '',
+  }
 
 }
