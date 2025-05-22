@@ -1,0 +1,12 @@
+<div class="idades">
+  <form>
+    <label for="idade">Digite sua Idade: </label>
+    <input [(ngModel)]="idade" id="idade" name="idade" type="idade" type="number">
+
+    <h1 *ngif="idade >= 60">Idoso</h1>
+    <h1 *ngif="idade >= 18 && idade < 60">Adulto</h1>
+    <h1 *ngif="idade > 12 && idade < 18">Adolecente</h1>
+    <h1 *ngIf="idade < 12 && idade > 0">Criança</h1>
+    <h1 *ngIf="idade < 0">Valor inválido</h1>
+  </form>
+

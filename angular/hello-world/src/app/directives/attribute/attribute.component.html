@@ -1,0 +1,27 @@
+<div class="idades">
+  <label for="idade">Idade: </label>
+  <input [(ngModel)]="idade" id="idade" name="idade" type="idade" type="number">
+
+  <h1 *ngif="idade >= 60">Idoso</h1>
+  <h1 *ngif="idade >= 18 && idade < 60">Adulto</h1>
+  <h1 *ngif="idade < 18">Criança</h1>
+
+  @if (idade >= 60) {
+    <h1>Idoso</h1>
+  } @else if (idade >= 18 && idade < 60) {
+    <h1>Adulto</h1>
+  } @else if (idade > 0 && idade < 18) {
+    <h1>Criança</h1>
+  } @else {
+    <h1 class="error">Valor Inválido!</h1>
+  }
+</div>
+<div class="lista">
+  <h1>FOR</h1>
+  <select id="frutas" name="frutas">
+    @for (fruit of fruits; track fruit) {
+      <option>{{ fruit }}</option>
+    }
+  </select>
+
+</div>

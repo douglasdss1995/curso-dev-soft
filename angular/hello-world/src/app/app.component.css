@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: aliceblue;
+  height: 800px;
+}
+
+nav {
+  border-right: 2px solid #ccc;
+  padding: 1rem;
+  background-color: antiquewhite;
+  color: #605f5f;
+}
+
+dd {
+  margin-left: 0.5rem;
+}
+
+dd:before {
+  content: '►'
+}
+
+dd:hover {
+  color: #f1c76a;
+}
+
+a:hover {
+  color: #ccb689;
+}
+
+dt {
+  text-align: left;
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
