@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {ReactiveFormBuilderComponent} from './forms/reactive/reactive-form-builder/reactive-form-builder.component';
+import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ReactiveFormBuilderComponent],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

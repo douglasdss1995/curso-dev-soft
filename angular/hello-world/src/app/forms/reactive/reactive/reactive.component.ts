@@ -13,7 +13,7 @@ export class ReactiveComponent implements OnInit {
 
   ngOnInit() {
     this.form = new FormGroup({
-      name: new FormControl('', [
+      name: new FormControl('Douglas', [
         Validators.required,
         Validators.minLength(3),
         Validators.maxLength(128),
