@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="form" class="form">
+  <label for="idade">Digite sua idade: </label>
+  <input formControlName="idade" placeholder="Idade" type="number"/>
+  <button [disabled]="form.invalid" type="submit">Enviar</button>
+</form>

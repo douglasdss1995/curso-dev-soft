@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  nav {
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+
+    dd {
+      margin-left: 0.5rem;
+    }
+
+    dd:before {
+      content: '▸'; /* símbolo mais moderno que o traço */
+      color: #007BFF; /* azul bonito */
+      font-weight: bold;
+      margin-right: 0.4rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    dd:hover::before {
+      color: #0056b3; /* muda de cor ao passar o mouse */
+    }
+
+  }
+
+}
