@@ -1,13 +1,12 @@
 import {Component} from '@angular/core';
-import {InterpolationComponent} from './data-binding/interpolation/interpolation.component';
-import {ProperentyBidingComponent} from './data-binding/properenty-biding/properenty-biding.component';
-import {EventBindingComponent} from './data-binding/event-binding/event-binding.component';
-import {TwoWayDataBindingComponent} from './data-binding/two-way-data-binding/two-way-data-binding.component';
-import {ReactiveFormBuilderComponent} from './forms/reactive-form-builder/reactive-form-builder.component';
+import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [InterpolationComponent, ProperentyBidingComponent, EventBindingComponent, TwoWayDataBindingComponent, ReactiveFormBuilderComponent],
+  imports: [
+    RouterOutlet,
+    RouterLink
+  ],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
