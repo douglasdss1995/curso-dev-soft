@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-am-i-old',
@@ -11,17 +11,16 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   styleUrl: './am-i-old.component.css'
 })
 export class AmIOldComponent {
-  form!: FormGroup;
-  idade: number = 1;
+  formGroup!: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
-
   }
 
   ngOnInit() {
-
+    this.formGroup = this.formBuilder.group({
+      years_old: [null, [Validators.required, Validators.min(1), Validators.max(200)]],
+    })
   }
 
 
 }
-

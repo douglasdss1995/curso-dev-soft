@@ -1,0 +1,29 @@
+<div class="container">
+
+  <h1>Pipes Nativos</h1>
+
+  <div>lowercase - Converte todas as letras do texto para minusculas: {{ 'FPFTech' | lowercase }}</div>
+  <div>uppercase - Converte todas as letra do texto para maiusculas: {{ 'FPFTech' | uppercase }}</div>
+  <div>Title - Converte o texto para a primeira letra de cada palarva em maiusculo: {{ 'FPFTech' | titlecase }}</div>
+  <div>Slice - Retira do texto baseado em range: {{ 'FPFTech' | slice:1:3 }}</div>
+
+  <div>Number - Formatação básica: {{ pi | number }}</div>
+  <div>Number - Precisão decimal fixa: {{ pi | number:'1.2-2' }}</div>
+  <div>Number - Número mínimo de dígitos inteiros: {{ pi | number:'3.0-0' }}</div>
+  <div>Number - Sem casas decimais: {{ pi | number:'1.0-0' }}</div>
+
+  <div>
+    Formata o número com o padrão de moeda
+    <div>{{ pi | currency: 'BRL': 'symbol' }}</div>
+    <div>{{ pi | currency: 'BRL': 'code' }}</div>
+    <div>{{ pi | currency: 'USD': 'symbol' }}</div>
+  </div>
+
+  <div>
+    <h1>Date</h1>
+    <div>{{ date | date }}</div>
+    <div>{{ date | date: 'full' }}</div>
+    <div>{{ date | date: 'dd/MM/yyyy' }}</div>
+  </div>
+
+</div>

@@ -1,5 +1,18 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="form" class="form">
-  <label for="idade">Digite sua idade: </label>
-  <input formControlName="idade" placeholder="Idade" type="number"/>
-  <button [disabled]="form.invalid" type="submit">Enviar</button>
+<form [formGroup]="formGroup">
+  <label for="years_old">Idade: </label>
+  <input formControlName="years_old" id="years_old" name="years_old" type="number">
 </form>
+
+@let desc = formGroup.get('years_old')?.value;
+
+@if (desc > 60) {
+  <h1>Idoso</h1>
+} @else if (desc > 18) {
+  <h1>Adulto</h1>
+} @else if (desc > 12) {
+  <h1>Adolescente</h1>
+} @else if (desc > 0) {
+  <h1>Criança</h1>
+} @else {
+  <h1>Valor invalido</h1>
+}
