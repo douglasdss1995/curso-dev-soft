@@ -1,0 +1,11 @@
+<button type="button" (click)="toggleVisibility()">Toggle</button>
+
+<br>
+<div [ngClass]="{'active': toggle, 'inactive': !toggle}">
+  Este bloco muda a classe CSS conforme a condição.
+</div>
+
+<br>
+<div [ngStyle]="{'color': toggle ? 'red' : 'green'}">
+  Este texto muda a cor de acordo com o clique.
+</div>

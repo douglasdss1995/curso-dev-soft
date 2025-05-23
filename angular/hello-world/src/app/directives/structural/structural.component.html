@@ -1,0 +1,36 @@
+<h1>Structural</h1>
+
+<div>
+  <h2>If</h2>
+
+  <button type="button" (click)="toggleVisibility()">Toggle</button>
+  <div *ngIf="isVisible">Este texto é visível se isVisible for verdadeiro.</div>
+  <div *ngIf="!isVisible">Este texto é visível se isVisible for falso.</div>
+  <br>
+
+  @if (isVisible) {
+    <div>Este texto é visível se isVisible for verdadeiro.</div>
+  } @else {
+    <div>Este texto é visível se isVisible for falso.</div>
+  }
+
+</div>
+
+<div>
+  <h2>FOR</h2>
+
+  <ul *ngFor="let fruit of fruits;">
+    <li>{{ fruit }}</li>
+  </ul>
+
+  <ul *ngFor="let fruit of fruits;">
+    <li>{{ fruit }}</li>
+  </ul>
+</div>
+
+<div>
+  <h2>Switch</h2>
+
+
+
+</div>
