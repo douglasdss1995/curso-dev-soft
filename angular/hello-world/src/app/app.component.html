@@ -1,13 +1,26 @@
-<nav>
-  <dl>
-    <dt>Data Binding</dt>
-    <dd><a routerLink="event_binding">Event binding</a></dd>
-    <dd><a routerLink="interpolation">Interpolation</a></dd>
-    <dd><a routerLink="property_binding">PropertyBindingComponent</a></dd>
-    <dd><a routerLink="attribute_component">AttibutoComponente</a></dd>
-  </dl>
-</nav>
-
-<router-outlet></router-outlet>
-
-
+<div class="container">
+  <div>
+    <nav>
+      <dl>
+        <dt>Data Binding</dt>
+        <dd><a routerLink="event_binding">Event binding</a></dd>
+        <dd><a routerLink="interpolation">Interpolation</a></dd>
+        <dd><a routerLink="property_binding">Property binding</a></dd>
+        <dd><a routerLink="two_way_data_binding">Two way data binding</a></dd>
+        <dt>Forms</dt>
+        <dd><a routerLink="reactive">Reactive</a></dd>
+        <dd><a routerLink="reactive_form_builder">Reactive form builder</a></dd>
+        <dd><a routerLink="template_driven">Template driven</a></dd>
+        <dt>Pipes</dt>
+        <dd><a routerLink="pipes">Pipes</a></dd>
+        <dd><a routerLink="am_button">Angular material</a></dd>
+        <dd><a routerLink="form-field">Form field</a></dd>
+        <dd><a routerLink="slider">Slider</a></dd>
+        <dd><a routerLink="sidenav">Sidenav</a></dd>
+      </dl>
+    </nav>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
