@@ -10,6 +10,7 @@ import {Component} from '@angular/core';
 export class EventBindingComponent {
 
   message = 'clique no botão para mudar essa mensagem';
+  alterar = 'seguir'
 
   changeMessage() {
     this.message = 'Você clicou no Botão';
@@ -18,4 +19,5 @@ export class EventBindingComponent {
   returntoDefault() {
     this.message = 'clique no botão para mudar essa mensagem';
   }
+
 }

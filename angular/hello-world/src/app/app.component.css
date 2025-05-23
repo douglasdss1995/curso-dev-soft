@@ -7,7 +7,7 @@ body {
   flex-direction: row;
   gap: 1rem;
   background-color: aliceblue;
-  height: 800px;
+  height: 2000px;
 }
 
 nav {
@@ -38,5 +38,9 @@ dt {
   margin-left: 0;
   font-weight: bold;
   font-size: 1.8rem;
+}
+
+dt:hover {
+  color: #9f7707;
 }
 

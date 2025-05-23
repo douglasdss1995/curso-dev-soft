@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, FormsModule, Validators} from '@angular/forms';
 import {NgIf} from '@angular/common';
 
@@ -12,17 +12,17 @@ import {NgIf} from '@angular/common';
   standalone: true,
   styleUrl: './am-i-old.component.css'
 })
-export class AmIOldComponent {
+export class AmIOldComponent implements OnInit {
   isVisible = false;
   idade: number = 1;
-  Form!: FormGroup;
+  form!: FormGroup;
 
-  constructor(private forms: FormBuilder) {
+  constructor(private fb: FormBuilder) {
   }
 
   ngOnInit() {
-    this.Form = this.formBuilder.group({
-      idade: ['', Validators.required, validators.number],
+    this.form = this.fb.group({
+      idade: ['', Validators.required]
     });
   }
 }

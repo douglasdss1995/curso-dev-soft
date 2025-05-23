@@ -8,6 +8,13 @@ import {TemplateDrivenComponent} from './forms/template-driven/template-driven.c
 import {ReactiveFormBuilderComponent} from './forms/reactive-form-builder/reactive-form-builder.component';
 import {AttributeComponent} from './directives/attribute/attribute.component';
 import {AmIOldComponent} from './directives/am-i-old/am-i-old.component';
+import {PipesComponent} from './pipes/pipes.component';
+import {PresentationComponent} from './angular-material/presentation/presentation.component';
+import {DatePickerComponent} from './angular-material/date-picker/date-picker.component';
+import {FormFieldComponent} from './angular-material/form-field/form-field.component';
+import {SliderComponent} from './angular-material/slider/slider.component';
+import {TreeComponent} from './angular-material/tree/tree.component';
+import {DialogComponent} from './angular-material/dialog/dialog.component';
 
 export const routes: Routes = [
   {path: 'event_binding', component: EventBindingComponent},
@@ -18,5 +25,13 @@ export const routes: Routes = [
   {path: 'template-driven', component: TemplateDrivenComponent},
   {path: 'reactive-form-builder', component: ReactiveFormBuilderComponent},
   {path: 'attribute', component: AttributeComponent},
-  {path: 'am-i-old', component: AmIOldComponent}
+  {path: 'am-i-old', component: AmIOldComponent},
+  {path: 'pipes', component: PipesComponent},
+  {path: 'presentation', component: PresentationComponent},
+  {path: 'date-picker', component: DatePickerComponent},
+  {path: 'form-field', component: FormFieldComponent},
+  {path: 'slider', component: SliderComponent},
+  {path: 'tree', component: TreeComponent},
+  {path: 'dialog', component: DialogComponent},
+
 ];
