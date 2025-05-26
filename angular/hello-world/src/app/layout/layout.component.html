@@ -1,0 +1,42 @@
+<mat-drawer-container autosize class="example-container">
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <mat-tree #tree [childrenAccessor]="childrenAccessor" [dataSource]="dataSource">
+      <!-- This is the tree node template for leaf nodes -->
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+        <!-- use a disabled button to provide padding for tree leaf -->
+        <button disabled mat-icon-button></button>
+        <span (click)="drawer.toggle()">{{ node.name }}</span>
+      </mat-tree-node>
+      <!-- This is the tree node template for expandable nodes -->
+      <mat-tree-node *matTreeNodeDef="let node;when: hasChild" [cdkTreeNodeTypeaheadLabel]="node.name"
+                     matTreeNodePadding
+                     matTreeNodeToggle>
+        <button [attr.aria-label]="'Toggle ' + node.name" mat-icon-button matTreeNodeToggle>
+          <mat-icon class="mat-icon-rtl-mirror">
+            {{ tree.isExpanded(node) ? 'expand_more' : 'chevron_right' }}
+          </mat-icon>
+        </button>
+        <span (click)="drawer.toggle()">{{ node.name }}</span>
+      </mat-tree-node>
+    </mat-tree>
+
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <mat-toolbar>
+      <button (click)="drawer.toggle()" aria-label="Example icon-button with menu icon" class="example-icon"
+              mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button aria-label="Example icon-button with heart icon" class="example-icon favorite-icon" mat-icon-button>
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button aria-label="Example icon-button with share icon" class="example-icon" mat-icon-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+
+</mat-drawer-container>
