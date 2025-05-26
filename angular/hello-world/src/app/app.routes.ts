@@ -12,6 +12,8 @@ import {ButtonComponent} from './angular-material/button/button.component';
 import {TogglesComponent} from './angular-material/toggles/toggles.component';
 import {TreeComponent} from './angular-material/tree/tree.component';
 
+import {LayoutModule} from '@angular/cdk/layout';
+
 export const routes: Routes = [
   {path: 'event_binding', component: EventBindingComponent},
   {path: 'interpolation', component: InterpolationComponent},
@@ -25,4 +27,5 @@ export const routes: Routes = [
   {path: 'am_button', component: ButtonComponent},
   {path: 'am_toggles', component: TogglesComponent},
   {path: 'am_tree', component: TreeComponent},
+  {path: 'am_layout', component: LayoutModule},
 ];
