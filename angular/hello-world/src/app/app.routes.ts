@@ -7,6 +7,10 @@ import {PresentationComponent} from './angular-material/presentation/presentatio
 import {FormFieldComponent} from './angular-material/form-field/form-field.component';
 import {SlideComponent} from './angular-material/slider/slide.component';
 import {SidenavComponent} from './angular-material/sidenav/sidenav.component';
+import {TreeComponent} from './angular-material/tree/tree.component';
+import {
+  DialogOverviewExampleComponent
+} from './angular-material/dialog-overview-example/dialog-overview-example.component';
 
 
 export const routes: Routes = [
@@ -18,4 +22,6 @@ export const routes: Routes = [
   {path: 'form-field', component: FormFieldComponent},
   {path: 'slider', component: SlideComponent},
   {path: 'sidenav', component: SidenavComponent},
+  {path: 'tree', component: TreeComponent},
+  {path: 'am_dialog', component: DialogOverviewExampleComponent},
 ];
