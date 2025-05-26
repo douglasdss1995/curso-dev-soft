@@ -7,13 +7,27 @@ import {TemplateDrivenComponent} from './forms/template-driven/template-driven.c
 import {ReactiveComponent} from './forms/reactive/reactive.component';
 import {ReactiveFormBuilderComponent} from './forms/reactive-form-builder/reactive-form-builder.component';
 import {RouterLink, RouterOutlet} from '@angular/router';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {LayoutComponent} from './angular-material/layout/layout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [InterpolationComponent, PropetyBingingComponent, EventBindingComponent, TwoWayDataBindingComponent, TemplateDrivenComponent, ReactiveComponent, ReactiveFormBuilderComponent, RouterOutlet, RouterLink],
+  imports: [InterpolationComponent,
+    PropetyBingingComponent,
+    EventBindingComponent,
+    TwoWayDataBindingComponent,
+    TemplateDrivenComponent,
+    ReactiveComponent,
+    ReactiveFormBuilderComponent,
+    RouterOutlet, RouterLink,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule, LayoutComponent,],
   templateUrl: './app.component.html',
   standalone: true,
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'hello-world';

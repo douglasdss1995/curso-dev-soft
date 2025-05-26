@@ -1,0 +1,41 @@
+<mat-drawer-container autosize class="example-container">
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <dt>Data Binding</dt>
+    <dd><a (click)="drawer.toggle()" routerLink="event_binding">Event Binding</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="interpolation">Interpolation</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="propety-binging">Propety-Binging</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="two-way-data-binding">Two-Way-Data-Binding</a></dd>
+    <dt>Forms</dt>
+    <dd><a (click)="drawer.toggle()" routerLink="reactive">Reactive</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="reactive-form-builder">Reactive Form Builder</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="template-driven">Template Driven</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="attribute">Attribute</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="am-i-old">Idade</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="pipes">Pipes</a></dd>
+    <dt>Angular Material</dt>
+    <dd><a (click)="drawer.toggle()" routerLink="presentation">Presentation</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="date-picker">Date Picker</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="form-field">Form Field</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="slider">Slider</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="tree">Tree</a></dd>
+    <dd><a (click)="drawer.toggle()" routerLink="dialog-overview-example">Dialog</a></dd>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <mat-toolbar>
+      <button (click)="drawer.toggle()" aria-label="Example icon-button with menu icon" class="example-icon"
+              mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button aria-label="Example icon-button with heart icon" class="example-icon favorite-icon" mat-icon-button>
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button aria-label="Example icon-button with share icon" class="example-icon" mat-icon-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

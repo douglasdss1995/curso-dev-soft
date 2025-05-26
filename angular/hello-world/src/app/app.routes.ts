@@ -14,7 +14,9 @@ import {DatePickerComponent} from './angular-material/date-picker/date-picker.co
 import {FormFieldComponent} from './angular-material/form-field/form-field.component';
 import {SliderComponent} from './angular-material/slider/slider.component';
 import {TreeComponent} from './angular-material/tree/tree.component';
-import {DialogComponent} from './angular-material/dialog/dialog.component';
+import {
+  DialogOverviewExampleComponent
+} from './angular-material/dialog/dialog-overview-example/dialog-overview-example.component';
 
 export const routes: Routes = [
   {path: 'event_binding', component: EventBindingComponent},
@@ -32,6 +34,5 @@ export const routes: Routes = [
   {path: 'form-field', component: FormFieldComponent},
   {path: 'slider', component: SliderComponent},
   {path: 'tree', component: TreeComponent},
-  {path: 'dialog', component: DialogComponent},
-
+  {path: 'dialog-overview-example', component: DialogOverviewExampleComponent},
 ];

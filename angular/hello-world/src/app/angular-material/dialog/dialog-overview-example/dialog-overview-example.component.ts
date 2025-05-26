@@ -3,15 +3,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialog} from '@angular/material/dialog';
 import {
-  MAT_DIALOG_DATA,
-  MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogRef,
-  MatDialogTitle
-} from '@angular/material/dialog';
+  DialogOverviewExampleDialogComponent
+} from '../dialog-overview-example-dialog/dialog-overview-example-dialog.component';
 
 export interface DialogData {
   animal: string;
@@ -19,19 +14,21 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'app-dialog',
-  templateUrl: './dialog.component.html',
+  selector: 'app-dialog-overview-example',
   imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true
+  templateUrl: './dialog-overview-example.component.html',
+  standalone: true,
+  styleUrl: './dialog-overview-example.component.css',
 })
-export class DialogOverviewExample {
+export class DialogOverviewExampleComponent {
+
   readonly animal = signal('');
   readonly name = model('');
   readonly dialog = inject(MatDialog);
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogComponent, {
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialogComponent, {
       data: {name: this.name(), animal: this.animal()},
     });
 
@@ -42,27 +39,5 @@ export class DialogOverviewExample {
       }
     });
   }
-}
 
-@Component({
-  selector: 'app-dialog',
-  imports: [
-    MatFormFieldModule,
-    MatInputModule,
-    FormsModule,
-    MatButtonModule,
-    MatDialogTitle,
-    MatDialogContent,
-    MatDialogActions,
-    MatDialogClose,
-  ],
-  templateUrl: './dialog.component.html',
-  standalone: true,
-  styleUrl: './dialog.component.css'
-})
-export class DialogComponent {
-  readonly dialogRef = inject(MatDialogRef<DialogComponent>);
-  readonly data = inject<DialogData>(MAT_DIALOG_DATA);
-  readonly animal = model(this.data.animal);
-  
 }
