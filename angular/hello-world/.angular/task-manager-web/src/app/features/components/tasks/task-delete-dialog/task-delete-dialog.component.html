@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-title">
+    <h1>Delete</h1>
+    <div class="card-close">
+      <mat-icon fontIcon="close" (click)="closeDialog()"></mat-icon>
+    </div>
+  </div>
+  <div class="card-content">
+    Deseja realmente excluir a tarefa: {{ data.title }}?
+  </div>
+  <div class="card-actions">
+    <button mat-fab extended (click)="closeDialog()">
+      <mat-icon fontIcon="close"></mat-icon>
+      Cancelar
+    </button>
+    <button mat-fab extended (click)="delete()">
+      <mat-icon fontIcon="thumb_up"></mat-icon>
+      Confirmar
+    </button>
+  </div>
+</div>

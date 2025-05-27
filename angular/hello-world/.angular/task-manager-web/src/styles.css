@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /*background-color: #242424;*/
+}
+
+:root {
+  --header-height: 50px;
+  --footer-height: 25px;
+  /*Calculate content height subtracting the size of the header and footer*/
+  --content-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+}
+
+.mat-icon:hover {
+  transform: scale(1.3);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+th.mat-column-actions {
+  width: 20px;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+.card {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  .card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-left: .5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .card-content {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .card-actions {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
+  }
+}

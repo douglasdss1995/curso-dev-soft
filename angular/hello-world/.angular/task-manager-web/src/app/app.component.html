@@ -1,0 +1,36 @@
+<mat-drawer-container>
+  <mat-drawer #drawer mode="over" opened="false">
+    <app-sidenav [drawer]="drawer"></app-sidenav>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div id="container">
+
+      <header id="header">
+        <a (click)="drawer.toggle()" id="btn-menu">
+          <mat-icon aria-hidden="false" aria-label="Task" fontIcon="menu"></mat-icon>
+          <span id="system-name">Task Manager</span>
+        </a>
+
+        <div id="settings-menu">
+          <mat-icon fontIcon="person"></mat-icon>
+
+          <mat-icon [matMenuTriggerFor]="menuSettings" fontIcon="settings"></mat-icon>
+          <mat-menu #menuSettings="matMenu">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Logout</button>
+          </mat-menu>
+        </div>
+      </header>
+
+      <main id="content">
+        <router-outlet></router-outlet>
+      </main>
+
+      <footer id="footer">
+        <app-footer></app-footer>
+      </footer>
+    </div>
+  </mat-drawer-content>
+
+</mat-drawer-container>
