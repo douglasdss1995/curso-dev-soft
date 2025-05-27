@@ -16,6 +16,11 @@ import {DatepickerComponent} from './angular-material/datepicker/datepicker.comp
 import {FormFieldComponent} from './angular-material/form-field/form-field.component';
 import {SliderComponent} from './angular-material/slider/slider.component';
 import {SidenavComponent} from './angular-material/sidenav/sidenav.component';
+import {TreeComponent} from './angular-material/tree/tree.component';
+import {
+  DialogOrverviewExampleComponent
+} from './angular-material/dialog-orverview-example/dialog-orverview-example.component';
+import {LayoutComponent} from './layout/layout.component';
 
 export const routes: Routes = [
   {path: 'event_binding', component: EventBindingComponent},
@@ -33,4 +38,7 @@ export const routes: Routes = [
   {path: 'formfield', component: FormFieldComponent},
   {path: 'slider', component: SliderComponent},
   {path: 'sidenav', component: SidenavComponent},
+  {path: 'tree', component: TreeComponent},
+  {path: 'dialogoverviewexample', component: DialogOrverviewExampleComponent},
+  {path: 'layout', component: LayoutComponent},
 ];

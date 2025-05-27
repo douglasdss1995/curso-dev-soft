@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Ola, {{ data.name }}</h2>
+<mat-dialog-content>
+  <p>Qual é o seu animal favorito?</p>
+  <mat-form-field>
+    <mat-label>Seu Animal Favorito</mat-label>
+    <input [(ngModel)]="animal" matInput/>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button (click)="onNoClick()" mat-button>Não, obrigado</button>
+  <button [mat-dialog-close]="animal()" cdkFocusInitial mat-button>Ok</button>
+</mat-dialog-actions>
+
