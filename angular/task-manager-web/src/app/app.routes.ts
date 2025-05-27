@@ -6,7 +6,7 @@ import {TaskItemComponent} from './features/components/tasks/task-item/task-item
 export const routes: Routes = [
   {path: '', component: TasksComponent},
   {path: 'tasks', component: TasksComponent},
-  {path: 'tasks', component: TaskItemComponent},
+  {path: 'task', component: TaskItemComponent},
   {path: `tasks/:id`, component: TaskItemComponent},
   {path: 'users', component: UsersComponent},
   {path: '*', component: TasksComponent},
