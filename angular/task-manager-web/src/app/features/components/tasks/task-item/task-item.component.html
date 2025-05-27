@@ -1,0 +1,32 @@
+<form [formGroup]="formGroup" (ngSubmit)="saveOrUpdate()">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <mat-icon (click)="backHistory()" aria-hidden="false" aria-label="Example home icon"
+                  fontIcon="arrow_back"></mat-icon>
+        <h1>{{ title }}</h1>
+      </div>
+    </div>
+    <div class="card-content">
+
+      <mat-form-field>
+        <mat-label>Textarea</mat-label>
+        <textarea formControlName="title" matInput></textarea>
+      </mat-form-field>
+
+    </div>
+    <div class="card-actions">
+
+      <button mat-flat-button (click)="backHistory()">
+        Cancelar
+        <mat-icon fontIcon="cancel"></mat-icon>
+      </button>
+      <button mat-flat-button>
+        Enviar
+        <mat-icon (click)="saveOrUpdate()" fontIcon="save"></mat-icon>
+      </button>
+
+    </div>
+  </div>
+
+</form>
