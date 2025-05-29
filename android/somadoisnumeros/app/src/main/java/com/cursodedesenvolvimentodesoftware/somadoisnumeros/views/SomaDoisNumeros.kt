@@ -24,6 +24,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.cursodedesenvolvimentodesoftware.somadoisnumeros.components.CustomButton
 import com.cursodedesenvolvimentodesoftware.somadoisnumeros.ui.theme.Green
 import com.cursodedesenvolvimentodesoftware.somadoisnumeros.ui.theme.White
 
@@ -87,7 +88,7 @@ fun SomaDoisNumeros(
                         .fillMaxWidth(),
                 )
 
-                Button(
+                CustomButton(
                     onClick = {
                         sum = (number1.toInt() + number2.toInt()).toString()
                         Toast.makeText(
@@ -95,15 +96,8 @@ fun SomaDoisNumeros(
                             "Resultado: $sum",
                             Toast.LENGTH_LONG
                         ).show()
-                    },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Green,
-                        contentColor = White
-                    ),
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("Somar")
-                }
+                    }
+                )
 
                 Text(
                     sum,
