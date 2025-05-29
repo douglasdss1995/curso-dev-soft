@@ -1,14 +1,15 @@
 package com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.views
 
 import android.widget.Toast
-import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -22,13 +23,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.ui.theme.Black
-import com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.ui.theme.DarkRed
-import com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.ui.theme.green
-import com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.ui.theme.grey
+import com.cursodedesenvolvimentodesoftware.somadoisnumeros.ui.theme.darkred
+import com.cursodedesenvolvimentodesoftwarwalderson.soma.doisnumeros.components.CustomButton
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable()
@@ -38,19 +38,21 @@ fun SomaDoisNumeros(
     var number1 by remember { mutableStateOf("") }
     var number2 by remember { mutableStateOf("") }
     var soma by remember { mutableStateOf("") }
+    var number1Validation by remember { mutableStateOf(false) }
+
     val context = LocalContext.current
 
     Scaffold(
-        topBar ={
+        topBar = {
             TopAppBar(
                 title = {
                     Text(
-                        text = "Soma de dois números",
-                        fontSize = 25.sp,
+                        text = "Soma de dois número",
+                        fontSize = 18.sp
                     )
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = DarkRed,
+                    containerColor = darkred,
                     titleContentColor = White
                 ),
             )
@@ -59,16 +61,35 @@ fun SomaDoisNumeros(
             Column(
                 modifier = modifier
                     .padding(innerPadding)
-                    .padding(horizontal = 10.dp)
+                    .padding(horizontal = 10.dp),
+//                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 OutlinedTextField(
                     value = number1,
                     onValueChange = {
                         number1 = it
+                        if (number1Validation) number1Validation = false
                     },
                     label = { Text("Digite um número") },
-                    modifier = Modifier.padding(15.dp,20.dp).fillMaxWidth()
-                    )
+                    modifier = Modifier
+                        .padding(
+                            bottom = 20.dp
+                        )
+                        .fillMaxWidth(),
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Decimal
+                    ),
+                    supportingText = {
+                        number1 = number1.trim()
+
+                        if (number1.isEmpty()) {
+                            Text(
+                                text = "Campo obrigatório",
+                                color = MaterialTheme.colorScheme.error
+                            )
+                        }
+                    }
+                )
 
                 OutlinedTextField(
                     value = number2,
@@ -76,35 +97,54 @@ fun SomaDoisNumeros(
                         number2 = it
                     },
                     label = { Text("Digite um número") },
-                    modifier = Modifier.padding(15.dp,20.dp).fillMaxWidth()
+                    modifier = Modifier
+                        .padding(
+                            bottom = 20.dp
+                        )
+                        .fillMaxWidth(),
                 )
-
-                Button(
-                    onClick = {
-                        soma = (number1.toInt() + number2.toInt()).toString()
-                        Toast.makeText(
-                            context,
-                            "Resultado: $soma",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = DarkRed,
-                        contentColor = White,
-                    ),
-                    modifier = Modifier.padding(8.dp,20.dp).fillMaxWidth()
+                Row(
+                    horizontalArrangement = Arrangement.End,
+                    modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("Somar")
+                    CustomButton(
+                        onClick = {
+                            number1 = ""
+                            number2 = ""
+                            soma = ""
+                        },
+                        label = "Limpar",
+                        containerColor = MaterialTheme.colorScheme.secondary,
+                        contentColor = MaterialTheme.colorScheme.onSecondary
+                    )
+                    Spacer(
+                        modifier = Modifier.padding(10.dp)
+                    )
+
+                    CustomButton(
+                        onClick = {
+                            soma = (number1.toInt() + number2.toInt()).toString()
+                            Toast.makeText(
+                                context,
+                                "Resultado: $soma",
+                                Toast.LENGTH_LONG
+                            )
+                                .show()
+                        },
+                        label = "Subtrair",
+                        containerColor = MaterialTheme.colorScheme.primary,
+                        contentColor = MaterialTheme.colorScheme.onPrimary
+                    )
                 }
-                Text("Resultado:",
-                    fontSize = 25.sp,
-                    )
-                Text(soma,
-                    fontSize = 45.sp,
+
+                Text(
+                    soma,
+                    fontSize = 100.sp,
                     textAlign = TextAlign.Center,
-                    color = green,
-                    modifier = Modifier.fillMaxWidth().background(Black).height(200.dp).padding(60.dp)
-                    )
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                )
             }
         }
     )
