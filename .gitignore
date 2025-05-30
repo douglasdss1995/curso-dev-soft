@@ -104,3 +104,4 @@ build/
 *.swo
 *.tmp
 *. ⬤
+android/IMC/gradle/
